@@ -237,6 +237,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
 /* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
 /* harmony import */ var _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./order-dialog/order-dialog.component */ "./src/app/order-dialog/order-dialog.component.ts");
+/* harmony import */ var _orders_service__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./orders.service */ "./src/app/orders.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -248,6 +249,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 // import { MatGridListModule } from '@angular/material/grid-list';
+
 
 
 
@@ -308,7 +310,7 @@ var AppModule = /** @class */ (function () {
                 _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_16__["ItemDialogComponent"],
                 _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_31__["OrderDialogComponent"],
             ],
-            providers: [_data_service__WEBPACK_IMPORTED_MODULE_28__["DataService"]],
+            providers: [_data_service__WEBPACK_IMPORTED_MODULE_28__["DataService"], _orders_service__WEBPACK_IMPORTED_MODULE_32__["OrdersService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
@@ -754,7 +756,7 @@ var ItemDialogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-heading\">\n  <h3>Items</h3>\n</div>\n<div fxLayout=\"row wrap\" class=\"items-container\" fxLayoutGap=\"2.5%\" fxLayoutAlign=\"center center\">\n    \n      <mat-card *ngFor=\"let item of items$\" fxFlex=\"25%\" class=\"item\" color=\"primary\">\n          <mat-card-title class=\"card-title\">\n            <h4>{{item.name}}</h4>\n          </mat-card-title>\n          <mat-card-subtitle>\n            {{item.id}}\n          </mat-card-subtitle>\n          <img mat-card-image src=\"{{item.img}}\">\n          <mat-card-actions >\n            <button mat-raised-button (click)=\"openDialog(item)\" color=\"accent\">View</button>\n          </mat-card-actions>\n      </mat-card>\n</div>\n"
+module.exports = "<div class=\"page-heading\">\n  <h3>Items</h3>\n  <button (click)=\"addBusiness(200, '1/17/2019', '90', 'Food Panda')\"\n        class=\"btn btn-primary\">\n        Add Business\n     </button>\n</div>\n<div fxLayout=\"row wrap\" class=\"items-container\" fxLayoutGap=\"2.5%\" fxLayoutAlign=\"center center\">\n    \n      <mat-card *ngFor=\"let item of items$\" fxFlex=\"25%\" class=\"item\" color=\"primary\">\n          <mat-card-title class=\"card-title\">\n            <h4>{{item.name}}</h4>\n          </mat-card-title>\n          <mat-card-subtitle>\n            {{item.id}}\n          </mat-card-subtitle>\n          <img mat-card-image src=\"{{item.img}}\">\n          <mat-card-actions >\n            <button mat-raised-button (click)=\"openDialog(item)\" color=\"accent\">View</button>\n          </mat-card-actions>\n      </mat-card>\n</div>\n"
 
 /***/ }),
 
@@ -783,6 +785,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../item-dialog/item-dialog.component */ "./src/app/item-dialog/item-dialog.component.ts");
+/* harmony import */ var _orders_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../orders.service */ "./src/app/orders.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -796,14 +799,19 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var ItemsComponent = /** @class */ (function () {
-    function ItemsComponent(data, dialog) {
+    function ItemsComponent(data, orders, dialog) {
         this.data = data;
+        this.orders = orders;
         this.dialog = dialog;
     }
     ItemsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.data.getItems().subscribe(function (data) { return _this.items$ = data; });
+    };
+    ItemsComponent.prototype.addBusiness = function (amount, order_date, orderid, deliveryBy) {
+        this.orders.addBusiness(amount, order_date, orderid, deliveryBy);
     };
     ItemsComponent.prototype.openDialog = function (item) {
         var dialogRef = this.dialog.open(_item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ItemDialogComponent"], {
@@ -822,7 +830,7 @@ var ItemsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./items.component.html */ "./src/app/items/items.component.html"),
             styles: [__webpack_require__(/*! ./items.component.scss */ "./src/app/items/items.component.scss")]
         }),
-        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
+        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _orders_service__WEBPACK_IMPORTED_MODULE_4__["OrdersService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
     ], ItemsComponent);
     return ItemsComponent;
 }());
@@ -1103,6 +1111,61 @@ var OrderWindowComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], OrderWindowComponent);
     return OrderWindowComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/orders.service.ts":
+/*!***********************************!*\
+  !*** ./src/app/orders.service.ts ***!
+  \***********************************/
+/*! exports provided: OrdersService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OrdersService", function() { return OrdersService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OrdersService = /** @class */ (function () {
+    function OrdersService(http) {
+        this.http = http;
+        this.uri = 'http://localhost:4000/business';
+    }
+    OrdersService.prototype.getOrders = function () {
+        return this.http.get("" + this.uri);
+    };
+    OrdersService.prototype.addBusiness = function (amount, order_date, orderid, deliveryBy) {
+        var obj = {
+            amount: amount,
+            order_date: order_date,
+            orderId: orderid,
+            deliveryBy: deliveryBy
+        };
+        console.log(obj);
+        this.http.post(this.uri + "/add", obj)
+            .subscribe(function (res) { return console.log('Done'); });
+    };
+    OrdersService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], OrdersService);
+    return OrdersService;
 }());
 
 
