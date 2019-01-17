@@ -1,0 +1,60 @@
+[
+    {
+      "id": "SCF-001",
+      "type": "fries",
+      "name": "Straight Cut Fries",
+      "img": "assets/cut-fries.jpg",
+      "details":[
+        {"name": "Straight Cut Fries-R", "amount": "125"},
+        {"name": "Straight Cut Fries-M", "amount": "175"},
+        {"name": "Straight Cut Fries-L", "amount": "225"}
+      ]
+    },
+    {
+      "id": "SUC-002",
+      "type": "sauce",
+      "name": "Sauces",
+      "img": "assets/sauce.jpg",
+      "details":[
+        {"name": "Tangled Tango"},
+        {"name": "Eldorado Buzz"},
+        {"name": "Cloud Green"},
+        {"name": "Winky Twister"},
+        {"name": "Mayo-Li"}
+      ]
+    },
+    {
+      "id": "PZF-003",
+      "type": "pizza-fries",
+      "name": "Pizza Fries",
+      "img": "assets/fries.jpg",
+      "details":[
+        {"name":"Bar-b-q Pizza Fries", "amount": "300"},
+        {"name":"Cream Chicken Pizza Fires", "amount": "300"},
+        {"name":"Chicken Fajita Pizza Fries", "amount": "300"},
+        {"name":"Supreme Pizza Fries", "amount": "350"}
+      ]
+    },
+    {
+      "id": "BVG-005",
+      "name": "Baverages",
+      "type": "baverages",
+      "img": "assets/beverages.jpg",
+      "details": [
+        {"name":"CD (345ml)", "amount": "40"},
+        {"name":"CD (500ml)", "amount": "60"},
+        {"name":"CD (1.5Ltr)", "amount": "100"},
+        {"name":"Aqua Fina (500ml)", "amount": "30"}
+      ]
+    },
+    {
+      "id": "NGT-004",
+      "name": "Side Line Item",
+      "type": "side-line",
+      "img": "assets/side.jpg",
+      "details": [
+        {"name":"Nuggets (8 pcs)", "amount": "225"},
+        {"name":"Wings (8 pcs)", "amount": "250"}
+      ]
+    }
+  ]

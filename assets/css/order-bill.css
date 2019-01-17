@@ -1,0 +1,104 @@
+.total-amount{
+    text-align: right;
+    padding-right: 30px !important;
+}
+
+.center-logo{
+    text-align: center;
+    
+}
+
+th{
+    background-color: black;
+    color:white;
+}
+
+.item-name-td{
+    width: 250px !important;
+}
+
+.item-name-th{
+    width: 250px !important;
+}
+
+.center-logo img{
+    width: 60%;
+}
+
+tr th{
+    font-size: 6px !important;
+    text-align: left;
+    width: 30px;
+}
+td{
+    font-size: 6px !important;
+    text-align: left;
+    width: 30px;
+}
+
+input{
+    border: none;
+    width: 25px;
+    font-size: 6px;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+
+h4{
+    font-size: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+}
+.total-amount{
+    text-align: right;
+    float: right;
+}
+
+
+thead{
+    background-color: black !important;
+}
+
+thead th{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr{
+    font-family: Arial, Helvetica, sans-serif;
+    border-top:solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 0;
+    padding: 0 5px;
+}
+
+small{
+    font-size: 5px;
+}
+p{
+    margin: 2px 0;
+    padding: 0;
+}
+h6{
+    text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;
+    margin: 3px;
+}
+
+.mat-column-columndelete{
+    display:none;
+}
+
+th{
+    margin: 0 !important;
+}
+
+.credits{
+    margin-top: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 3px;
+}
