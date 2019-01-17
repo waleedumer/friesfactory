@@ -1143,7 +1143,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var OrdersService = /** @class */ (function () {
     function OrdersService(http) {
         this.http = http;
-        this.uri = 'http://localhost:4000/business';
+        this.uri = 'https://waleedumer.github.io/friesfactory/business';
     }
     OrdersService.prototype.getOrders = function () {
         return this.http.get("" + this.uri);
