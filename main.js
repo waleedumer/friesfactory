@@ -756,7 +756,7 @@ var ItemDialogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-heading\">\n  <h3>Items</h3>\n  <button (click)=\"addBusiness(200, '1/17/2019', '90', 'Food Panda')\"\n        class=\"btn btn-primary\">\n        Add Business\n     </button>\n</div>\n<div fxLayout=\"row wrap\" class=\"items-container\" fxLayoutGap=\"2.5%\" fxLayoutAlign=\"center center\">\n    \n      <mat-card *ngFor=\"let item of items$\" fxFlex=\"25%\" class=\"item\" color=\"primary\">\n          <mat-card-title class=\"card-title\">\n            <h4>{{item.name}}</h4>\n          </mat-card-title>\n          <mat-card-subtitle>\n            {{item.id}}\n          </mat-card-subtitle>\n          <img mat-card-image src=\"{{item.img}}\">\n          <mat-card-actions >\n            <button mat-raised-button (click)=\"openDialog(item)\" color=\"accent\">View</button>\n          </mat-card-actions>\n      </mat-card>\n</div>\n"
+module.exports = "<div class=\"page-heading\">\n  <h3>Items</h3>\n  <button mat-raised-button (click)=\"addBusiness(200, '1/17/2019', '90', 'Food Panda')\"\n        class=\"btn btn-primary\">\n        Add Business\n     </button>\n     <button mat-raised-button (click)=\"getBusiness()\"\n        class=\"btn btn-primary\">\n        Check Get\n     </button>\n</div>\n<div fxLayout=\"row wrap\" class=\"items-container\" fxLayoutGap=\"2.5%\" fxLayoutAlign=\"center center\">\n    \n      <mat-card *ngFor=\"let item of items$\" fxFlex=\"25%\" class=\"item\" color=\"primary\">\n          <mat-card-title class=\"card-title\">\n            <h4>{{item.name}}</h4>\n          </mat-card-title>\n          <mat-card-subtitle>\n            {{item.id}}\n          </mat-card-subtitle>\n          <img mat-card-image src=\"{{item.img}}\">\n          <mat-card-actions >\n            <button mat-raised-button (click)=\"openDialog(item)\" color=\"accent\">View</button>\n          </mat-card-actions>\n      </mat-card>\n</div>\n"
 
 /***/ }),
 
@@ -812,6 +812,14 @@ var ItemsComponent = /** @class */ (function () {
     };
     ItemsComponent.prototype.addBusiness = function (amount, order_date, orderid, deliveryBy) {
         this.orders.addBusiness(amount, order_date, orderid, deliveryBy);
+    };
+    ItemsComponent.prototype.getBusiness = function () {
+        var _this = this;
+        this.orders.getOrders().subscribe(function (data) {
+            _this.postdata = data;
+            console.log(_this.postdata);
+        });
+        ;
     };
     ItemsComponent.prototype.openDialog = function (item) {
         var dialogRef = this.dialog.open(_item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ItemDialogComponent"], {
@@ -1140,6 +1148,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
+var httpOptions = {
+    headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+        'Content-Type': 'application/json',
+        'Authorization': 'my-auth-token'
+    })
+};
 var OrdersService = /** @class */ (function () {
     function OrdersService(http) {
         this.http = http;
@@ -1155,8 +1170,10 @@ var OrdersService = /** @class */ (function () {
             orderId: orderid,
             deliveryBy: deliveryBy
         };
+        var headers = new Headers();
+        headers.append('Content-Type', 'application/json');
         console.log(obj);
-        this.http.post(this.uri + "/add", obj)
+        this.http.post(this.uri + "/add", obj, httpOptions)
             .subscribe(function (res) { return console.log('Done'); });
     };
     OrdersService = __decorate([
