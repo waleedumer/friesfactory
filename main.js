@@ -756,7 +756,7 @@ var ItemDialogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-heading\">\n  <h3>Items</h3>\n  <button mat-raised-button (click)=\"addBusiness(200, '1/17/2019', '90', 'Food Panda')\"\n        class=\"btn btn-primary\">\n        Add Business\n     </button>\n     <button mat-raised-button (click)=\"getBusiness()\"\n        class=\"btn btn-primary\">\n        Check Get\n     </button>\n</div>\n<div fxLayout=\"row wrap\" class=\"items-container\" fxLayoutGap=\"2.5%\" fxLayoutAlign=\"center center\">\n    \n      <mat-card *ngFor=\"let item of items$\" fxFlex=\"25%\" class=\"item\" color=\"primary\">\n          <mat-card-title class=\"card-title\">\n            <h4>{{item.name}}</h4>\n          </mat-card-title>\n          <mat-card-subtitle>\n            {{item.id}}\n          </mat-card-subtitle>\n          <img mat-card-image src=\"{{item.img}}\">\n          <mat-card-actions >\n            <button mat-raised-button (click)=\"openDialog(item)\" color=\"accent\">View</button>\n          </mat-card-actions>\n      </mat-card>\n</div>\n"
+module.exports = "<div class=\"page-heading\">\n  <h3>Items</h3>\n  <!-- <button mat-raised-button (click)=\"addBusiness(200, '1/17/2019', '90', 'Food Panda')\"\n        class=\"btn btn-primary\">\n        Add Business\n     </button> -->\n     <button mat-raised-button (click)=\"getBusiness()\"\n        class=\"btn btn-primary\">\n        Check Get\n     </button>\n</div>\n<div fxLayout=\"row wrap\" class=\"items-container\" fxLayoutGap=\"2.5%\" fxLayoutAlign=\"center center\">\n    \n      <mat-card *ngFor=\"let item of items$\" fxFlex=\"25%\" class=\"item\" color=\"primary\">\n          <mat-card-title class=\"card-title\">\n            <h4>{{item.name}}</h4>\n          </mat-card-title>\n          <mat-card-subtitle>\n            {{item.id}}\n          </mat-card-subtitle>\n          <img mat-card-image src=\"{{item.img}}\">\n          <mat-card-actions >\n            <button mat-raised-button (click)=\"openDialog(item)\" color=\"accent\">View</button>\n          </mat-card-actions>\n      </mat-card>\n</div>\n"
 
 /***/ }),
 
@@ -1158,7 +1158,7 @@ var httpOptions = {
 var OrdersService = /** @class */ (function () {
     function OrdersService(http) {
         this.http = http;
-        this.uri = 'https://waleedumer.github.io/friesfactory/business';
+        this.uri = 'https://fries-factory.herokuapp.com/business';
     }
     OrdersService.prototype.getOrders = function () {
         return this.http.get("" + this.uri);
