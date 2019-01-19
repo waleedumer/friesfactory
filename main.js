@@ -756,7 +756,7 @@ var ItemDialogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-heading\">\n  <h3>Items</h3>\n  <!-- <button mat-raised-button (click)=\"addBusiness(200, '1/17/2019', '90', 'Food Panda')\"\n        class=\"btn btn-primary\">\n        Add Business\n     </button> -->\n     <button mat-raised-button (click)=\"getBusiness()\"\n        class=\"btn btn-primary\">\n        Check Get\n     </button>\n</div>\n<div fxLayout=\"row wrap\" class=\"items-container\" fxLayoutGap=\"2.5%\" fxLayoutAlign=\"center center\">\n    \n      <mat-card *ngFor=\"let item of items$\" fxFlex=\"25%\" class=\"item\" color=\"primary\">\n          <mat-card-title class=\"card-title\">\n            <h4>{{item.name}}</h4>\n          </mat-card-title>\n          <mat-card-subtitle>\n            {{item.id}}\n          </mat-card-subtitle>\n          <img mat-card-image src=\"{{item.img}}\">\n          <mat-card-actions >\n            <button mat-raised-button (click)=\"openDialog(item)\" color=\"accent\">View</button>\n          </mat-card-actions>\n      </mat-card>\n</div>\n"
+module.exports = "<div class=\"page-heading\">\n  <h3>Items</h3>\n  <!-- <button mat-raised-button (click)=\"addBusiness(200, '1/17/2019', '90', 'Food Panda')\"\n        class=\"btn btn-primary\">\n        Add Business\n     </button> -->\n     <!-- <button mat-raised-button (click)=\"getBusiness()\"\n        class=\"btn btn-primary\">\n        Check Get\n     </button> -->\n</div>\n<div fxLayout=\"row wrap\" class=\"items-container\" fxLayoutGap=\"2.5%\" fxLayoutAlign=\"center center\">\n    \n      <mat-card *ngFor=\"let item of items$\" fxFlex=\"25%\" class=\"item\" color=\"primary\">\n          <mat-card-title class=\"card-title\">\n            <h4>{{item.name}}</h4>\n          </mat-card-title>\n          <mat-card-subtitle>\n            {{item.id}}\n          </mat-card-subtitle>\n          <img mat-card-image src=\"{{item.img}}\">\n          <mat-card-actions >\n            <button mat-raised-button (click)=\"openDialog(item)\" color=\"accent\">View</button>\n          </mat-card-actions>\n      </mat-card>\n</div>\n"
 
 /***/ }),
 
@@ -810,16 +810,15 @@ var ItemsComponent = /** @class */ (function () {
         var _this = this;
         this.data.getItems().subscribe(function (data) { return _this.items$ = data; });
     };
-    ItemsComponent.prototype.addBusiness = function (amount, order_date, orderid, deliveryBy) {
-        this.orders.addBusiness(amount, order_date, orderid, deliveryBy);
-    };
+    // addBusiness(amount, order_date, orderid, deliveryBy) {
+    //   this.orders.addBusiness(amount, order_date, orderid, deliveryBy);
+    // }
     ItemsComponent.prototype.getBusiness = function () {
         var _this = this;
         this.orders.getOrders().subscribe(function (data) {
             _this.postdata = data;
             console.log(_this.postdata);
         });
-        ;
     };
     ItemsComponent.prototype.openDialog = function (item) {
         var dialogRef = this.dialog.open(_item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ItemDialogComponent"], {
@@ -854,7 +853,7 @@ var ItemsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-heading\">\r\n    <ul class=\"timelist\">\r\n        <li><mat-icon class=\"example-icon\" color=\"accent\">access_time</mat-icon></li>\r\n        <li><span class=\"time-now\">{{ today | date:'medium' }}</span></li>\r\n    </ul>\r\n    <h4>ODER DETAILS</h4>\r\n    \r\n    </div>\r\n        <section class=\"order-type\">\r\n            <mat-radio-group [(ngModel)]=\"labelPosition\">\r\n              <mat-radio-button class=\"order-type-rad\" value=\"Take Away\" (change)=\"radioChange($event)\">Take Away</mat-radio-button>\r\n              <mat-radio-button class=\"order-type-rad\" value=\"food panda\" (change)=\"radioChange($event)\">Food Panda</mat-radio-button>\r\n            </mat-radio-group>\r\n        </section>\r\n    \r\n<div class=\"print-receipt\">\r\n    <div fxLayout=\"row wrap\" class=\"order-item\" fxLayoutAlign=\"left\">\r\n            <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\" width=\"100%\">\r\n\r\n\r\n                    <ng-container matColumnDef=\"position\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"item-name-th\"> Item </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"item-name-td\"> {{element.name}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"name\">\r\n                      <th mat-header-cell *matHeaderCellDef> Price </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  > {{element.price}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"email\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Qty </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"text-right\"> <input type=\"number\"  value=\"{{element.quantity}}\" class=\"qty-box\"> </td>\r\n                    </ng-container>\r\n                    <ng-container matColumnDef=\"amount\">\r\n                            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\r\n                            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">{{element.amount}}</td>\r\n                            <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\r\n                          </ng-container>\r\n                    \r\n                          <ng-container matColumnDef=\"columndelete\">\r\n                            <th style=\"width:15%;\" mat-header-cell *matHeaderCellDef> </th>\r\n                            <td  mat-cell *matCellDef=\"let element\">       \r\n                              <mat-icon (click)=\"delete(element)\">delete</mat-icon> </td>\r\n                          </ng-container>\r\n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n                    <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\r\n                  </table>\r\n    </div>\r\n    <div  fxLayout=\"row wrap\" fxLayoutAlign=\"right\" class=\"order-footer\">\r\n        <h4 fxFlex=\"50%\" class=\"\">Total</h4>\r\n        <h4 fxFlex=\"50%\" class=\"total-amount\">0</h4>\r\n    </div>\r\n  \r\n</div>\r\n<div  fxLayout=\"row wrap\" fxLayoutAlign=\"center\" class=\"order-action\">\r\n    <button fxFlex=\"40%\" mat-raised-button color=\"accent\" (click)=\"printThis()\">CHECKOUT</button>\r\n    <button fxFlex=\"40%\" mat-raised-button (click)=\"clearTable()\">CANCEL</button>\r\n</div>\r\n<script>\r\n\r\n</script>"
+module.exports = "<div class=\"page-heading\">\r\n    <ul class=\"timelist\">\r\n        <li><mat-icon class=\"example-icon\" color=\"accent\">access_time</mat-icon></li>\r\n        <li><span class=\"time-now\">{{ today | date:'medium' }}</span></li>\r\n    </ul>\r\n    <h4>ODER DETAILS</h4>\r\n    \r\n    </div>\r\n        <section class=\"order-type\">\r\n            <mat-radio-group [(ngModel)]=\"labelPosition\">\r\n              <mat-radio-button class=\"order-type-rad\" value=\"Take Away\" (change)=\"radioChange($event)\">Take Away</mat-radio-button>\r\n              <mat-radio-button class=\"order-type-rad\" value=\"food panda\" (change)=\"radioChange($event)\">Food Panda</mat-radio-button>\r\n            </mat-radio-group>\r\n        </section>\r\n    \r\n<div class=\"print-receipt\">\r\n    <div fxLayout=\"row wrap\" class=\"order-item\" fxLayoutAlign=\"left\">\r\n            <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\" width=\"100%\">\r\n\r\n\r\n                    <ng-container matColumnDef=\"position\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"item-name-th\"> Item </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"item-name-td\"> {{element.name}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"name\">\r\n                      <th mat-header-cell *matHeaderCellDef> Price </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  > {{element.price}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"email\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Qty </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"text-right\"> <input type=\"number\" disabled  value=\"{{element.quantity}}\" class=\"qty-box\"> </td>\r\n                    </ng-container>\r\n                    <ng-container matColumnDef=\"amount\">\r\n                            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\r\n                            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">{{element.amount}}</td>\r\n                            <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\r\n                          </ng-container>\r\n                    \r\n                          <ng-container matColumnDef=\"columndelete\">\r\n                            <th style=\"width:15%;\" mat-header-cell *matHeaderCellDef> </th>\r\n                            <td  mat-cell *matCellDef=\"let element\">       \r\n                              <mat-icon (click)=\"delete(element)\">delete</mat-icon> </td>\r\n                          </ng-container>\r\n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n                    <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\r\n                  </table>\r\n    </div>\r\n    <div  fxLayout=\"row wrap\" fxLayoutAlign=\"right\" class=\"order-footer\">\r\n        <h4 fxFlex=\"50%\" class=\"\">Total</h4>\r\n        <h4 fxFlex=\"50%\" class=\"total-amount\">0</h4>\r\n    </div>\r\n  \r\n</div>\r\n<div  fxLayout=\"row wrap\" fxLayoutAlign=\"center\" class=\"order-action\">\r\n    <button fxFlex=\"40%\" mat-raised-button color=\"accent\" (click)=\"printThis()\">CHECKOUT</button>\r\n    <button fxFlex=\"40%\" mat-raised-button (click)=\"clearTable()\">CANCEL</button>\r\n</div>\r\n<script>\r\n\r\n</script>"
 
 /***/ }),
 
@@ -882,6 +881,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _orders_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../orders.service */ "./src/app/orders.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -894,8 +894,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var OrderDetailsComponent = /** @class */ (function () {
-    function OrderDetailsComponent(renderer, el, zone, dataService) {
+    function OrderDetailsComponent(orderService, renderer, el, zone, dataService) {
+        this.orderService = orderService;
         this.renderer = renderer;
         this.el = el;
         this.zone = zone;
@@ -942,13 +944,20 @@ var OrderDetailsComponent = /** @class */ (function () {
         this.dataService.clearTable();
     };
     OrderDetailsComponent.prototype.printThis = function () {
-        var _this = this;
         var data = [];
-        this.orders = [];
-        this.dataService.getProducts().subscribe(function (data) {
-            _this.orders = data;
-            _this.showIems(_this.orders.data[0].sequence_value);
+        console.log(this.dataSource.data);
+        var total;
+        total = 0;
+        this.dataSource.data.forEach(function (element) {
+            total = total + element.amount;
         });
+        console.log(total);
+        this.orders = [];
+        //   //this.dataService.getProducts().subscribe((data: {}) => {
+        //   this.orders = data;
+        //   //this.showIems(this.orders.data[0].sequence_value);
+        // });
+        this.orderService.addOrder(total, this.dataSource.data, this.deliverBy);
         var currentdate = new Date();
         var datetime = currentdate.getDate() + "/"
             + (currentdate.getMonth() + 1) + "/"
@@ -978,7 +987,7 @@ var OrderDetailsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./order-details.component.html */ "./src/app/order-details/order-details.component.html"),
             styles: [__webpack_require__(/*! ./order-details.component.scss */ "./src/app/order-details/order-details.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
+        __metadata("design:paramtypes", [_orders_service__WEBPACK_IMPORTED_MODULE_3__["OrdersService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
     ], OrderDetailsComponent);
     return OrderDetailsComponent;
 }());
@@ -1137,6 +1146,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OrdersService", function() { return OrdersService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1146,6 +1156,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1160,15 +1171,31 @@ var OrdersService = /** @class */ (function () {
         this.http = http;
         this.uri = 'https://fries-factory.herokuapp.com/business';
     }
-    OrdersService.prototype.getOrders = function () {
-        return this.http.get("" + this.uri);
+    OrdersService.prototype.extractData = function (res) {
+        var body = res;
+        return body || {};
     };
-    OrdersService.prototype.addBusiness = function (amount, order_date, orderid, deliveryBy) {
+    OrdersService.prototype.getOrders = function () {
+        var date = new Date();
+        var currentDate = date.getDate() + "/"
+            + (date.getMonth() + 1) + "/"
+            + date.getFullYear();
+        return this.http.get("" + this.uri + '?orderDate=' + currentDate).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
+        ;
+    };
+    OrdersService.prototype.addOrder = function (amount, items, deliveryBy) {
+        var date = new Date();
+        var currentDate = date.getDate() + "/"
+            + (date.getMonth() + 1) + "/"
+            + date.getFullYear();
+        var orderId;
+        orderId = date.getDate() + date.getMonth() + date.getFullYear() + date.getMinutes() + date.getHours() + date.getSeconds();
         var obj = {
             amount: amount,
-            order_date: order_date,
-            orderId: orderid,
-            deliveryBy: deliveryBy
+            order_date: currentDate,
+            orderId: orderId,
+            deliveryBy: deliveryBy,
+            items: items
         };
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
@@ -1207,7 +1234,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-wrapper\">\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h3 color=\"accent\" class=\"page-heading\">Orders</h3></span>\n        <span class=\"example-spacer\"></span>\n        <mat-form-field>\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Filter\">\n          </mat-form-field>\n    </mat-toolbar>\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h4 color=\"accent\">Total Amount: <span class=\"total-amount\">0</span></h4></span>\n        <span class=\"example-spacer\"></span>\n        <span><h4 color=\"accent\">Total Orders: <span class=\"total-orders\">0</span></h4></span>\n    </mat-toolbar>\n    <div class=\"mat-elevation-z8\">\n    <table mat-table [dataSource]=\"dataSource\" matSort class=\"mat-elevation-z8 orders-table\" width=\"100%\">\n\n        <ng-container matColumnDef=\"position\">\n          <th mat-header-cell *matHeaderCellDef mat-sort-header class=\"item-name-th\"> Item </th>\n          <td mat-cell *matCellDef=\"let element\" class=\"item-name-td\"> {{element.orderId}} </td>\n        </ng-container>\n      \n        <ng-container matColumnDef=\"name\">\n          <th mat-header-cell *matHeaderCellDef> Price </th>\n          <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  > {{element.order_date}} </td>\n        </ng-container>\n    \n        <ng-container matColumnDef=\"amount\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right order-amount\">{{element.amount}}</td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"delivery\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Delivery Method </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n              <img *ngIf=\"element.deliveryBy === 'food panda'\" width=\"20%\" src=\"assets/foodpanda.jpg\">  \n              <span *ngIf=\"element.deliveryBy === 'Take Away'\">{{element.deliveryBy}}</span>\n              \n            \n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"action\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Action </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n                <button mat-raised-button color=\"accent\" (click)=\"openDialog(element.orderId)\">View</button>\n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n        \n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n        <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\n    </table>\n    <mat-paginator [pageSizeOptions]=\"[5, 10, 25, 100]\"></mat-paginator>\n    </div>\n</div>\n"
+module.exports = "<div class=\"page-wrapper\">\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h3 color=\"accent\" class=\"page-heading\">Orders</h3></span>\n        <span class=\"example-spacer\"></span>\n        <mat-form-field>\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Filter\">\n          </mat-form-field>\n    </mat-toolbar>\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h4 color=\"accent\">Total Amount: <span class=\"total-orders-amount\">0</span></h4></span>\n        <span class=\"example-spacer\"></span>\n        <span><h4 color=\"accent\">Total Orders: <span class=\"total-orders\">0</span></h4></span>\n    </mat-toolbar>\n    <div class=\"mat-elevation-z8\">\n    <table mat-table [dataSource]=\"dataSource\"  class=\"mat-elevation-z8 orders-table\" width=\"100%\">\n\n        <ng-container matColumnDef=\"position\">\n          <th mat-header-cell *matHeaderCellDef  class=\"item-name-th\"> Serial# </th>\n          <td mat-cell *matCellDef=\"let element; let i = index;\" class=\"item-name-td\"> {{i+1}} </td>\n        </ng-container>\n      \n        <ng-container matColumnDef=\"name\">\n          <th mat-header-cell *matHeaderCellDef> Date </th>\n          <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  >{{element.order_date}} </td>\n        </ng-container>\n    \n        <ng-container matColumnDef=\"amount\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right order-amount\">{{element.amount}}</td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"delivery\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Delivery Method </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n              <img *ngIf=\"element.deliveryBy === 'food panda'\" width=\"20%\" src=\"assets/foodpanda.jpg\">  \n              <span *ngIf=\"element.deliveryBy === 'Take Away'\">{{element.deliveryBy}}</span>\n              \n            \n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"action\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Action </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n                <button mat-raised-button color=\"accent\" (click)=\"openDialog(element.orderId)\">View</button>\n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n        \n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n        <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\n\n    </table>\n    <mat-paginator [pageSizeOptions]=\"[5, 10, 25, 100]\"></mat-paginator>\n    \n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -1225,6 +1252,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../order-dialog/order-dialog.component */ "./src/app/order-dialog/order-dialog.component.ts");
+/* harmony import */ var _orders_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../orders.service */ "./src/app/orders.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1239,30 +1267,43 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var OrdersComponent = /** @class */ (function () {
-    function OrdersComponent(dataService, dialog) {
+    function OrdersComponent(orderService, dataService, dialog) {
+        this.orderService = orderService;
         this.dataService = dataService;
         this.dialog = dialog;
         this.today = Date.now();
         this.displayedColumns = ['position', 'name', 'amount', 'delivery', 'action'];
+        this.ordersData = [];
+        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this.ordersData);
         this.length = 100;
         this.pageSize = 10;
         this.pageSizeOptions = [5, 10, 25, 100];
     }
     OrdersComponent.prototype.ngAfterViewChecked = function () {
-        this.sumTotal();
         this.totalOrders();
+        // this.sumTotal();
     };
     OrdersComponent.prototype.ngOnInit = function () {
         var _this = this;
         var data = [];
+        var sum = 10;
         this.orders = [];
-        this.dataService.getOrders().subscribe(function (data) {
-            _this.orders = data;
-            _this.dataSource = _this.orders.data;
-            // console.log(this.orders.data);
+        this.postdata = [];
+        this.orderService.getOrders().subscribe(function (data) {
+            _this.postdata = data;
+            console.log(data);
+            _this.dataSource.data = data;
+            console.log(_this.dataSource.data);
             _this.dataSource.paginator = _this.paginator;
             _this.dataSource.sort = _this.sort;
+            _this.dataSource.data.forEach(function (element) {
+                sum += parseInt(element['amount']);
+            });
+            console.log(sum);
+            $('.total-orders-amount').html(sum);
         });
     };
     OrdersComponent.prototype.openDialog = function (orderId) {
@@ -1282,15 +1323,16 @@ var OrdersComponent = /** @class */ (function () {
             this.dataSource.paginator.firstPage();
         }
     };
-    OrdersComponent.prototype.sumTotal = function () {
-        var sum = 0;
-        var amount = 0;
-        $(".orders-table tbody tr ").each(function () {
-            amount = $(this).find('td.order-amount').html();
-            sum += parseInt(amount);
-        });
-        $('.total-amount').html(sum);
-    };
+    // sumTotal(){
+    //   var sum: any = 0;
+    //   var amount: any = 0;
+    //   $(".orders-table tbody tr ").each(function() {
+    //     amount = $(this).find('td.order-amount').html();
+    //     sum += parseInt(amount);
+    //         })
+    //         console.log(amount);
+    //   $('.total-amount').html(sum);
+    //  }
     OrdersComponent.prototype.totalOrders = function () {
         var orders = 0;
         $(".orders-table tbody tr ").each(function () {
@@ -1312,7 +1354,7 @@ var OrdersComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./orders.component.html */ "./src/app/orders/orders.component.html"),
             styles: [__webpack_require__(/*! ./orders.component.css */ "./src/app/orders/orders.component.css")]
         }),
-        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
+        __metadata("design:paramtypes", [_orders_service__WEBPACK_IMPORTED_MODULE_4__["OrdersService"], _data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
     ], OrdersComponent);
     return OrdersComponent;
 }());
