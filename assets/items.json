@@ -41,8 +41,8 @@
       "type": "baverages",
       "img": "assets/beverages.jpg",
       "details": [
-        {"name":"CD (345ml)", "amount": "40"},
-        {"name":"CD (500ml)", "amount": "60"},
+        {"name":"CD (350ml)", "amount": "30"},
+        {"name":"CD (500ml)", "amount": "50"},
         {"name":"CD (1.5Ltr)", "amount": "100"},
         {"name":"Aqua Fina (500ml)", "amount": "30"}
       ]
