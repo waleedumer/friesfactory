@@ -501,8 +501,8 @@ var ELEMENT_DATA = [
     { position: 12, name: 'Supreme Pizza Fries', price: '350', size: '', amount: 0, 'quantity': 0 },
     { position: 13, name: 'Nuggets (8 pcs)', price: '225', size: '', amount: 0, 'quantity': 0 },
     { position: 14, name: 'Wings (8 pcs)', price: '250', size: '', amount: 0, 'quantity': 0 },
-    { position: 15, name: 'CD (345ml)', price: '40', size: '', amount: 0, 'quantity': 0 },
-    { position: 16, name: 'CD (500ml)', price: '60', size: '', amount: 0, 'quantity': 0 },
+    { position: 15, name: 'CD (350ml)', price: '30', size: '', amount: 0, 'quantity': 0 },
+    { position: 16, name: 'CD (500ml)', price: '50', size: '', amount: 0, 'quantity': 0 },
     { position: 17, name: 'CD (1.5Ltr)', price: '100', size: '', amount: 0, 'quantity': 0 },
     { position: 18, name: 'Aqua Fina (500ml)', price: '30', size: '', amount: 0, 'quantity': 0 },
 ];
@@ -514,7 +514,7 @@ var DataService = /** @class */ (function () {
         this.options = ['Straight Cut Fries-R', 'Straight Cut Fries-M', 'Straight Cut Fries-L',
             'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li', 'Bar-b-q Pizza Fries',
             'Cream Chicken Pizza Fires', 'Chicken Fajita Pizza Fries', 'Supreme Pizza Fries',
-            'Nuggets (8 pcs)', 'Wings (8 pcs)', '345ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml'
+            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml'
         ];
         this.selectedtableData = [];
     }
@@ -684,8 +684,8 @@ var ELEMENT_DATA = [
     { position: 12, name: 'Supreme Pizza Fries', price: '350', size: '', amount: 0 },
     { position: 13, name: 'Nuggets (8 pcs)', price: '225', size: '', amount: 0 },
     { position: 14, name: 'Wings (8 pcs)', price: '250', size: '', amount: 0 },
-    { position: 15, name: '345ml', price: '40', size: '', amount: 0 },
-    { position: 16, name: '500ml', price: '60', size: '', amount: 0 },
+    { position: 15, name: '350ml', price: '30', size: '', amount: 0 },
+    { position: 16, name: '500ml', price: '50', size: '', amount: 0 },
     { position: 17, name: '1.5 Ltr', price: '100', size: '', amount: 0 },
     { position: 18, name: 'Aqua Fina 500ml', price: '30', size: '', amount: 0 },
 ];
@@ -699,7 +699,7 @@ var ItemDialogComponent = /** @class */ (function () {
         this.options = ['Straight Cut Fries-R', 'Straight Cut Fries-M', 'Straight Cut Fries-L',
             'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li', 'Bar-b-q Pizza Fries',
             'Cream Chicken Pizza Fires', 'Chicken Fajita Pizza Fries', 'Supreme Pizza Fries',
-            'Nuggets (8 pcs)', 'Wings (8 pcs)', '345ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml'
+            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml'
         ];
         this.selectedtableDataNew = [];
     }
@@ -864,7 +864,7 @@ var ItemsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-heading\">\r\n    <ul class=\"timelist\">\r\n        <li><mat-icon class=\"example-icon\" color=\"accent\">access_time</mat-icon></li>\r\n        <li><span class=\"time-now\">{{ today | date:'medium' }}</span></li>\r\n    </ul>\r\n    <h4>ODER DETAILS</h4>\r\n    \r\n    </div>\r\n        <section class=\"order-type\">\r\n            <mat-radio-group [(ngModel)]=\"labelPosition\">\r\n              <mat-radio-button class=\"order-type-rad\" value=\"Take Away\" (change)=\"radioChange($event)\">Take Away</mat-radio-button>\r\n              <mat-radio-button class=\"order-type-rad\" value=\"food panda\" (change)=\"radioChange($event)\">Food Panda</mat-radio-button>\r\n            </mat-radio-group>\r\n        </section>\r\n    \r\n<div class=\"print-receipt\">\r\n    <div fxLayout=\"row wrap\" class=\"order-item\" fxLayoutAlign=\"left\">\r\n            <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\" width=\"100%\">\r\n\r\n\r\n                    <ng-container matColumnDef=\"position\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"item-name-th\"> Item </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"item-name-td\"> {{element.name}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"name\">\r\n                      <th mat-header-cell *matHeaderCellDef> Price </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  > {{element.price}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"email\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Qty </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"text-right\"> <input type=\"number\" disabled  value=\"{{element.quantity}}\" class=\"qty-box\"> </td>\r\n                    </ng-container>\r\n                    <ng-container matColumnDef=\"amount\">\r\n                            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\r\n                            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">{{element.amount}}</td>\r\n                            <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\r\n                          </ng-container>\r\n                    \r\n                          <ng-container matColumnDef=\"columndelete\">\r\n                            <th style=\"width:15%;\" mat-header-cell *matHeaderCellDef> </th>\r\n                            <td  mat-cell *matCellDef=\"let element\">       \r\n                              <mat-icon (click)=\"delete(element)\">delete</mat-icon> </td>\r\n                          </ng-container>\r\n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n                    <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\r\n                  </table>\r\n    </div>\r\n    <div  fxLayout=\"row wrap\" fxLayoutAlign=\"right\" class=\"order-footer\">\r\n        <h4 fxFlex=\"50%\" class=\"\">Total</h4>\r\n        <h4 fxFlex=\"50%\" class=\"total-amount\">0</h4>\r\n    </div>\r\n  \r\n</div>\r\n<div  fxLayout=\"row wrap\" fxLayoutAlign=\"center\" class=\"order-action\">\r\n    <button fxFlex=\"40%\" mat-raised-button color=\"accent\" (click)=\"printThis()\">CHECKOUT</button>\r\n    <button fxFlex=\"40%\" mat-raised-button (click)=\"clearTable()\">CANCEL</button>\r\n</div>\r\n<script>\r\n\r\n</script>"
+module.exports = "<div class=\"page-heading\">\r\n    <ul class=\"timelist\">\r\n        <li><mat-icon class=\"example-icon\" color=\"accent\">access_time</mat-icon></li>\r\n        <li><span class=\"time-now\">{{ today | date:'medium' }}</span></li>\r\n    </ul>\r\n    <h4>ODER DETAILS</h4>\r\n    \r\n    </div>\r\n        <section class=\"order-type\">\r\n            <mat-radio-group [(ngModel)]=\"labelPosition\">\r\n              <mat-radio-button class=\"order-type-rad\" value=\"Take Away\" (change)=\"radioChange($event)\">Take Away</mat-radio-button>\r\n              <mat-radio-button class=\"order-type-rad\" value=\"food panda\" (change)=\"radioChange($event)\">Food Panda</mat-radio-button>\r\n            </mat-radio-group>\r\n        </section>\r\n    \r\n<div class=\"print-receipt\">\r\n    <div fxLayout=\"row wrap\" class=\"order-item\" fxLayoutAlign=\"left\">\r\n            <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\" width=\"100%\">\r\n\r\n\r\n                    <ng-container matColumnDef=\"position\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"item-name-th\"> Item </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"item-name-td\"> {{element.name}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"name\">\r\n                      <th mat-header-cell *matHeaderCellDef> Price </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  > {{element.price}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"email\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Qty </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"text-right\"> <input type=\"number\" disabled  value=\"{{element.quantity}}\" class=\"qty-box\"> </td>\r\n                    </ng-container>\r\n                    <ng-container matColumnDef=\"amount\">\r\n                            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\r\n                            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">{{element.amount}}</td>\r\n                            <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\r\n                          </ng-container>\r\n                    \r\n                          <ng-container matColumnDef=\"columndelete\">\r\n                            <th style=\"width:15%;\" mat-header-cell *matHeaderCellDef> </th>\r\n                            <td  mat-cell *matCellDef=\"let element\">       \r\n                              <mat-icon (click)=\"delete(element)\">delete</mat-icon> </td>\r\n                          </ng-container>\r\n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n                    <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\r\n                  </table>\r\n    </div>\r\n    <div  fxLayout=\"row wrap\" fxLayoutAlign=\"right\" class=\"order-footer\">\r\n        <h4 fxFlex=\"50%\" class=\"\">Total</h4>\r\n        <h4 fxFlex=\"50%\" class=\"total-amount\">0</h4>\r\n    </div>\r\n  \r\n</div>\r\n<div  fxLayout=\"row wrap\" fxLayoutAlign=\"center\" class=\"order-action\">\r\n    <button fxFlex=\"40%\" mat-raised-button color=\"accent\" (click)=\"printThis()\">CHECKOUT</button>\r\n    <button fxFlex=\"40%\" mat-raised-button (click)=\"clearTable()\">CANCEL</button>\r\n    <button fxFlex=\"40%\" mat-raised-button (click)=\"checkTime()\">Check</button>\r\n</div>\r\n<script>\r\n\r\n</script>"
 
 /***/ }),
 
@@ -953,6 +953,11 @@ var OrderDetailsComponent = /** @class */ (function () {
     };
     OrderDetailsComponent.prototype.clearTable = function () {
         this.dataService.clearTable();
+    };
+    OrderDetailsComponent.prototype.checkTime = function () {
+        var date = new Date();
+        var currentTime = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        console.log(currentTime);
     };
     OrderDetailsComponent.prototype.printThis = function () {
         var data = [];
@@ -1217,11 +1222,13 @@ var OrdersService = /** @class */ (function () {
         var currentDate = date.getDate() + "/"
             + (date.getMonth() + 1) + "/"
             + date.getFullYear();
+        var currentTime = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
         var orderId;
         orderId = date.getDate() + date.getMonth() + date.getFullYear() + date.getMinutes() + date.getHours() + date.getSeconds();
         var obj = {
             amount: amount,
             order_date: currentDate,
+            order_time: currentTime,
             orderId: orderId,
             deliveryBy: deliveryBy,
             items: items
@@ -1487,7 +1494,7 @@ var SaleEndComponent = /** @class */ (function () {
     SaleEndComponent.prototype.vanishSale = function () {
         var _this = this;
         this.orderService.vanishSale().subscribe(function (data) {
-            _this.saleEnded = "You Sale is now ended.";
+            _this.saleEnded = "Your Sale is now ended.";
         });
     };
     SaleEndComponent = __decorate([
