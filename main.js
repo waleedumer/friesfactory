@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\" class=\"tool-bar\">\n    <mat-toolbar-row>\n      <span color=\"accent\" class=\"sign-off-btn\" matTooltip=\"End your today's sale\" routerLink=\"end-sale\"><i class=\"material-icons\">power_settings_new</i></span>\n      <span color=\"accent\" class=\"brand\"><img src=\"assets/logo/Logo.png\" alt=\"\"></span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"items\" class=\"item\">ITEMS</span>\n      <span color=\"accent\" class=\"item\">STOCK</span>\n      <span color=\"accent\" class=\"item\">SALES</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"orders\" class=\"item\">ORDERS</span>\n    </mat-toolbar-row>\n</mat-toolbar>\n"
+module.exports = "<mat-toolbar color=\"primary\" class=\"tool-bar\">\n    <mat-toolbar-row>\n      <span color=\"accent\" class=\"sign-off-btn\" matTooltip=\"End your today's sale\" routerLink=\"end-sale\"><i class=\"material-icons\">power_settings_new</i></span>\n      <span color=\"accent\" class=\"brand\"><img src=\"assets/logo/Logo.png\" alt=\"\"></span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"items\" class=\"item\">ITEMS</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"stock\" class=\"item\">STOCK</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"sales\" class=\"item\">SALES</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"orders\" class=\"item\">ORDERS</span>\n    </mat-toolbar-row>\n</mat-toolbar>\n"
 
 /***/ }),
 
@@ -101,6 +101,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _orders_orders_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./orders/orders.component */ "./src/app/orders/orders.component.ts");
 /* harmony import */ var _items_items_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./items/items.component */ "./src/app/items/items.component.ts");
 /* harmony import */ var _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./sale-end/sale-end.component */ "./src/app/sale-end/sale-end.component.ts");
+/* harmony import */ var _stock_stock_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./stock/stock.component */ "./src/app/stock/stock.component.ts");
+/* harmony import */ var _sales_sales_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sales/sales.component */ "./src/app/sales/sales.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -112,11 +114,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
 var routes = [
     { path: 'orders', component: _orders_orders_component__WEBPACK_IMPORTED_MODULE_2__["OrdersComponent"] },
     { path: 'items', component: _items_items_component__WEBPACK_IMPORTED_MODULE_3__["ItemsComponent"] },
     { path: 'issues', component: _items_items_component__WEBPACK_IMPORTED_MODULE_3__["ItemsComponent"] },
     { path: 'end-sale', component: _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_4__["SaleEndComponent"] },
+    { path: 'stock', component: _stock_stock_component__WEBPACK_IMPORTED_MODULE_5__["StockComponent"] },
+    { path: 'sales', component: _sales_sales_component__WEBPACK_IMPORTED_MODULE_6__["SalesComponent"] },
     { path: '', component: _items_items_component__WEBPACK_IMPORTED_MODULE_3__["ItemsComponent"] },
     { path: '', redirectTo: '', pathMatch: 'full' }
 ];
@@ -244,6 +250,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _orders_service__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./orders.service */ "./src/app/orders.service.ts");
 /* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
 /* harmony import */ var _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./sale-end/sale-end.component */ "./src/app/sale-end/sale-end.component.ts");
+/* harmony import */ var _stock_stock_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./stock/stock.component */ "./src/app/stock/stock.component.ts");
+/* harmony import */ var _sales_sales_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./sales/sales.component */ "./src/app/sales/sales.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -255,6 +263,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 // import { MatGridListModule } from '@angular/material/grid-list';
+
+
 
 
 
@@ -304,6 +314,8 @@ var AppModule = /** @class */ (function () {
                 _orders_orders_component__WEBPACK_IMPORTED_MODULE_25__["OrdersComponent"],
                 _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_32__["OrderDialogComponent"],
                 _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_35__["SaleEndComponent"],
+                _stock_stock_component__WEBPACK_IMPORTED_MODULE_36__["StockComponent"],
+                _sales_sales_component__WEBPACK_IMPORTED_MODULE_37__["SalesComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__["FlexLayoutModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__["MatDialogModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_17__["MatInputModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_18__["MatCheckboxModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_19__["MatTableModule"],
@@ -487,24 +499,24 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var endpoint = 'https://waleedumer.github.io/friesfactory/api';
 var ELEMENT_DATA = [
-    { position: 1, name: 'Straight Cut Fries-R', price: '125', size: 'Regular', amount: 0, 'quantity': 0 },
-    { position: 2, name: 'Straight Cut Fries-M', price: '175', size: 'Medium', amount: 0, 'quantity': 0 },
-    { position: 3, name: 'Straight Cut Fries-L', price: '225', size: 'Regular', amount: 0, 'quantity': 0 },
-    { position: 4, name: 'Tangled Tango', price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 5, name: 'Eldorado Buzz', price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 6, name: 'Cloud Green', price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 7, name: 'Winky Twister', price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 8, name: 'Mayo-Li', price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 9, name: 'Bar-b-q Pizza Fries', price: '300', size: '', amount: 0, 'quantity': 0 },
-    { position: 10, name: 'Cream Chicken Pizza Fires', price: '300', size: '', amount: 0, 'quantity': 0 },
-    { position: 11, name: 'Chicken Fajita Pizza Fries', price: '300', size: '', amount: 0, 'quantity': 0 },
-    { position: 12, name: 'Supreme Pizza Fries', price: '350', size: '', amount: 0, 'quantity': 0 },
-    { position: 13, name: 'Nuggets (8 pcs)', price: '225', size: '', amount: 0, 'quantity': 0 },
-    { position: 14, name: 'Wings (8 pcs)', price: '250', size: '', amount: 0, 'quantity': 0 },
-    { position: 15, name: 'CD (350ml)', price: '30', size: '', amount: 0, 'quantity': 0 },
-    { position: 16, name: 'CD (500ml)', price: '50', size: '', amount: 0, 'quantity': 0 },
-    { position: 17, name: 'CD (1.5Ltr)', price: '100', size: '', amount: 0, 'quantity': 0 },
-    { position: 18, name: 'Aqua Fina (500ml)', price: '30', size: '', amount: 0, 'quantity': 0 },
+    { position: 1, name: 'Straight Cut Fries-R', purchase_price: '70.5', sale_price: '125', size: 'Regular', amount: 0, 'quantity': 0 },
+    { position: 2, name: 'Straight Cut Fries-M', purchase_price: '96', sale_price: '175', size: 'Medium', amount: 0, 'quantity': 0 },
+    { position: 3, name: 'Straight Cut Fries-L', purchase_price: '105.2', sale_price: '225', size: 'Regular', amount: 0, 'quantity': 0 },
+    { position: 4, name: 'Tangled Tango', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
+    { position: 5, name: 'Eldorado Buzz', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
+    { position: 6, name: 'Cloud Green', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
+    { position: 7, name: 'Winky Twister', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
+    { position: 8, name: 'Mayo-Li', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
+    { position: 9, name: 'Bar-b-q Pizza Fries', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 10, name: 'Cream Chicken Pizza Fires', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 11, name: 'Chicken Fajita Pizza Fries', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 12, name: 'Supreme Pizza Fries', purchase_price: '182.5', sale_price: '350', size: '', amount: 0, 'quantity': 0 },
+    { position: 13, name: 'Nuggets (8 pcs)', purchase_price: '100.4', sale_price: '225', size: '', amount: 0, 'quantity': 0 },
+    { position: 14, name: 'Wings (8 pcs)', purchase_price: '154.5', sale_price: '250', size: '', amount: 0, 'quantity': 0 },
+    { position: 15, name: 'CD (350ml)', purchase_price: '30', sale_price: '30', size: '', amount: 0, 'quantity': 0 },
+    { position: 16, name: 'CD (500ml)', purchase_price: '50', sale_price: '50', size: '', amount: 0, 'quantity': 0 },
+    { position: 17, name: 'CD (1.5Ltr)', purchase_price: '100', sale_price: '100', size: '', amount: 0, 'quantity': 0 },
+    { position: 18, name: 'Aqua Fina (500ml)', purchase_price: '30', sale_price: '30', size: '', amount: 0, 'quantity': 0 },
 ];
 var DataService = /** @class */ (function () {
     function DataService(_http) {
@@ -526,20 +538,7 @@ var DataService = /** @class */ (function () {
         return body || {};
     };
     DataService.prototype.getOrderById = function (orderId) {
-        // return this._http.get('/api/getorderById').pipe(
-        //   map(this.extractData));
         return this._http.get(endpoint + '/api/getorderById', { params: { orderId: orderId } }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(this.extractData));
-        // this._http.post('/api/insertorders',{
-        //   "orderId": orderId
-        // }).subscribe(
-        //   data => {
-        //       console.log("POST Request is successful ", data);
-        //   },
-        //   error => {
-        //       console.log("Error", error);
-        //   }
-        // );  
-        // return;
     };
     DataService.prototype.getProducts = function () {
         return this._http.get(endpoint + '/api/orders').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(this.extractData));
@@ -554,7 +553,7 @@ var DataService = /** @class */ (function () {
             total = total + element.amount;
         });
         this._http.post(endpoint + '/api/insertorders', {
-            "orderId": orderId,
+            "orderId": '',
             "amount": total,
             "orderDate": orderDate,
             "deliveryBy": deliverBy,
@@ -577,7 +576,7 @@ var DataService = /** @class */ (function () {
                 var qunty = $(this).find('.quantity-box').val();
                 var selectedvalueArr = ELEMENT_DATA.find(function (e) { return e.name == selectedValue_1; });
                 selectedvalueArr.quantity = qunty;
-                selectedvalueArr.amount = qunty * selectedvalueArr.price;
+                selectedvalueArr.amount = qunty * selectedvalueArr.sale_price;
                 // console.log(selectedvalueArr);
                 jsonObj.push(selectedvalueArr);
                 jsonQnty.push(qunty);
@@ -592,7 +591,7 @@ var DataService = /** @class */ (function () {
         });
         this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this.selectedtableData);
         this.dataSource._updateChangeSubscription();
-        //  console.log();
+        console.log(this.dataSource.data);
     };
     DataService.prototype.deleteItem = function (elm) {
         var ind = this.selectedtableData.indexOf(elm);
@@ -670,24 +669,24 @@ var __param = (undefined && undefined.__param) || function (paramIndex, decorato
 
 
 var ELEMENT_DATA = [
-    { position: 1, name: 'Straight Cut Fries-R', price: '125', size: 'Regular', amount: 0 },
-    { position: 2, name: 'Straight Cut Fries-M', price: '175', size: 'Medium', amount: 0 },
-    { position: 3, name: 'Straight Cut Fries-L', price: '225', size: 'Regular', amount: 0 },
-    { position: 4, name: 'Tangled Tango', price: '0', size: '', amount: 0 },
-    { position: 5, name: 'Eldorado Buzz', price: '0', size: '', amount: 0 },
-    { position: 6, name: 'Cloud Green', price: '0', size: '', amount: 0 },
-    { position: 7, name: 'Winky Twister', price: '0', size: '', amount: 0 },
-    { position: 8, name: 'Mayo-Li', price: '0', size: '', amount: 0 },
-    { position: 9, name: 'Bar-b-q Pizza Fries', price: '300', size: '', amount: 0 },
-    { position: 10, name: 'Cream Chicken Pizza Fires', price: '300', size: '', amount: 0 },
-    { position: 11, name: 'Chicken Fajita Pizza Fries', price: '300', size: '', amount: 0 },
-    { position: 12, name: 'Supreme Pizza Fries', price: '350', size: '', amount: 0 },
-    { position: 13, name: 'Nuggets (8 pcs)', price: '225', size: '', amount: 0 },
-    { position: 14, name: 'Wings (8 pcs)', price: '250', size: '', amount: 0 },
-    { position: 15, name: '350ml', price: '30', size: '', amount: 0 },
-    { position: 16, name: '500ml', price: '50', size: '', amount: 0 },
-    { position: 17, name: '1.5 Ltr', price: '100', size: '', amount: 0 },
-    { position: 18, name: 'Aqua Fina 500ml', price: '30', size: '', amount: 0 },
+    { position: 1, name: 'Straight Cut Fries-R', purchase_price: '', sale_price: '125', size: 'Regular', amount: 0 },
+    { position: 2, name: 'Straight Cut Fries-M', purchase_price: '', sale_price: '175', size: 'Medium', amount: 0 },
+    { position: 3, name: 'Straight Cut Fries-L', purchase_price: '', sale_price: '225', size: 'Regular', amount: 0 },
+    { position: 4, name: 'Tangled Tango', purchase_price: '', sale_price: '0', size: '', amount: 0 },
+    { position: 5, name: 'Eldorado Buzz', purchase_price: '', sale_price: '0', size: '', amount: 0 },
+    { position: 6, name: 'Cloud Green', purchase_price: '', sale_price: '0', size: '', amount: 0 },
+    { position: 7, name: 'Winky Twister', purchase_price: '', sale_price: '0', size: '', amount: 0 },
+    { position: 8, name: 'Mayo-Li', purchase_price: '', sale_price: '0', size: '', amount: 0 },
+    { position: 9, name: 'Bar-b-q Pizza Fries', purchase_price: '', sale_price: '300', size: '', amount: 0 },
+    { position: 10, name: 'Cream Chicken Pizza Fires', purchase_price: '', sale_price: '300', size: '', amount: 0 },
+    { position: 11, name: 'Chicken Fajita Pizza Fries', purchase_price: '', sale_price: '300', size: '', amount: 0 },
+    { position: 12, name: 'Supreme Pizza Fries', purchase_price: '', sale_price: '350', size: '', amount: 0 },
+    { position: 13, name: 'Nuggets (8 pcs)', purchase_price: '', sale_price: '225', size: '', amount: 0 },
+    { position: 14, name: 'Wings (8 pcs)', purchase_price: '', sale_price: '250', size: '', amount: 0 },
+    { position: 15, name: 'CD (350ml)', purchase_price: '', sale_price: '30', size: '', amount: 0 },
+    { position: 16, name: 'CD (500ml)', purchase_price: '', sale_price: '50', size: '', amount: 0 },
+    { position: 17, name: 'CD (1.5Ltr)', purchase_price: '', sale_price: '100', size: '', amount: 0 },
+    { position: 18, name: 'Aqua Fina (500ml)', purchase_price: '', sale_price: '30', size: '', amount: 0 },
 ];
 var ItemDialogComponent = /** @class */ (function () {
     function ItemDialogComponent(dialogRef, data, dataAdd) {
@@ -722,27 +721,8 @@ var ItemDialogComponent = /** @class */ (function () {
         });
     };
     ItemDialogComponent.prototype.orderAdd = function () {
-        //this.orderDetails.addOrder();
         this.dataAdd.addOrder();
         this.dataSource = this.dataAdd.dataSource;
-        // console.log(this.selectedtableDataNew);
-        // var jsonObj : any = [];
-        // $('.table-item tbody tr').each(function(){
-        //   var checkbox = $(this).find('.mat-checkbox-input').attr('aria-checked');
-        //     if(checkbox == 'true'){
-        //     // alert($(this).find('.tr-item-name').text());
-        //  console.log(jsonObj);
-        //  const selectedValue = $(this).find('.tr-item-name').text();
-        //  console.log(selectedValue);
-        //  let selectedvalueArr: any = ELEMENT_DATA.find(e=>e.name==selectedValue);
-        //  jsonObj.push(selectedvalueArr);
-        //   }
-        //   })
-        // // console.log(selectedvalueArr);
-        // this.selectedtableDataNew.push(jsonObj)
-        //  this.dataSource = new MatTableDataSource(this.selectedtableDataNew);
-        //  this.dataSource._updateChangeSubscription();
-        //   console.log(this.dataSource);
     };
     ItemDialogComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -754,6 +734,63 @@ var ItemDialogComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"], Object, _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
     ], ItemDialogComponent);
     return ItemDialogComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/items.service.ts":
+/*!**********************************!*\
+  !*** ./src/app/items.service.ts ***!
+  \**********************************/
+/*! exports provided: ItemsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ItemsService", function() { return ItemsService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var httpOptions = {
+    headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+        'Content-Type': 'application/json',
+        'Authorization': 'my-auth-token'
+    })
+};
+var ItemsService = /** @class */ (function () {
+    function ItemsService(http) {
+        this.http = http;
+        this.uri = 'http://localhost:4000/business';
+    }
+    ItemsService.prototype.extractData = function (res) {
+        var body = res;
+        return body || {};
+    };
+    ItemsService.prototype.getItems = function () {
+        return this.http.get(this.uri + "/items").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
+    };
+    ItemsService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], ItemsService);
+    return ItemsService;
 }());
 
 
@@ -864,7 +901,7 @@ var ItemsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-heading\">\r\n    <ul class=\"timelist\">\r\n        <li><mat-icon class=\"example-icon\" color=\"accent\">access_time</mat-icon></li>\r\n        <li><span class=\"time-now\">{{ today | date:'medium' }}</span></li>\r\n    </ul>\r\n    <h4>ODER DETAILS</h4>\r\n    \r\n    </div>\r\n        <section class=\"order-type\">\r\n            <mat-radio-group [(ngModel)]=\"labelPosition\">\r\n              <mat-radio-button class=\"order-type-rad\" value=\"Take Away\" (change)=\"radioChange($event)\">Take Away</mat-radio-button>\r\n              <mat-radio-button class=\"order-type-rad\" value=\"food panda\" (change)=\"radioChange($event)\">Food Panda</mat-radio-button>\r\n            </mat-radio-group>\r\n        </section>\r\n    \r\n<div class=\"print-receipt\">\r\n    <div fxLayout=\"row wrap\" class=\"order-item\" fxLayoutAlign=\"left\">\r\n            <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\" width=\"100%\">\r\n\r\n\r\n                    <ng-container matColumnDef=\"position\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"item-name-th\"> Item </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"item-name-td\"> {{element.name}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"name\">\r\n                      <th mat-header-cell *matHeaderCellDef> Price </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  > {{element.price}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"email\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Qty </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"text-right\"> <input type=\"number\" disabled  value=\"{{element.quantity}}\" class=\"qty-box\"> </td>\r\n                    </ng-container>\r\n                    <ng-container matColumnDef=\"amount\">\r\n                            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\r\n                            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">{{element.amount}}</td>\r\n                            <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\r\n                          </ng-container>\r\n                    \r\n                          <ng-container matColumnDef=\"columndelete\">\r\n                            <th style=\"width:15%;\" mat-header-cell *matHeaderCellDef> </th>\r\n                            <td  mat-cell *matCellDef=\"let element\">       \r\n                              <mat-icon (click)=\"delete(element)\">delete</mat-icon> </td>\r\n                          </ng-container>\r\n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n                    <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\r\n                  </table>\r\n    </div>\r\n    <div  fxLayout=\"row wrap\" fxLayoutAlign=\"right\" class=\"order-footer\">\r\n        <h4 fxFlex=\"50%\" class=\"\">Total</h4>\r\n        <h4 fxFlex=\"50%\" class=\"total-amount\">0</h4>\r\n    </div>\r\n  \r\n</div>\r\n<div  fxLayout=\"row wrap\" fxLayoutAlign=\"center\" class=\"order-action\">\r\n    <button fxFlex=\"40%\" mat-raised-button color=\"accent\" (click)=\"printThis()\">CHECKOUT</button>\r\n    <button fxFlex=\"40%\" mat-raised-button (click)=\"clearTable()\">CANCEL</button>\r\n</div>\r\n<script>\r\n\r\n</script>"
+module.exports = "<div class=\"page-heading\">\r\n    <ul class=\"timelist\">\r\n        <li><mat-icon class=\"example-icon\" color=\"accent\">access_time</mat-icon></li>\r\n        <li><span class=\"time-now\">{{ today | date:'medium' }}</span></li>\r\n    </ul>\r\n    <h4>ODER DETAILS</h4>\r\n    \r\n    </div>\r\n        <section class=\"order-type\">\r\n            <mat-radio-group [(ngModel)]=\"labelPosition\">\r\n              <mat-radio-button class=\"order-type-rad\" value=\"Take Away\" (change)=\"radioChange($event)\">Take Away</mat-radio-button>\r\n              <mat-radio-button class=\"order-type-rad\" value=\"food panda\" (change)=\"radioChange($event)\">Food Panda</mat-radio-button>\r\n            </mat-radio-group>\r\n        </section>\r\n    \r\n<div class=\"print-receipt\">\r\n    <div fxLayout=\"row wrap\" class=\"order-item\" fxLayoutAlign=\"left\">\r\n            <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\" width=\"100%\">\r\n\r\n\r\n                    <ng-container matColumnDef=\"position\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"item-name-th\"> Item </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"item-name-td\"> {{element.name}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"name\">\r\n                      <th mat-header-cell *matHeaderCellDef> Price </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  > {{element.sale_price}} </td>\r\n                    </ng-container>\r\n                  \r\n                  \r\n                    <ng-container matColumnDef=\"email\">\r\n                      <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Qty </th>\r\n                      <td mat-cell *matCellDef=\"let element\" class=\"text-right\"> <input type=\"number\" disabled  value=\"{{element.quantity}}\" class=\"qty-box\"> </td>\r\n                    </ng-container>\r\n                    <ng-container matColumnDef=\"amount\">\r\n                            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\r\n                            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">{{element.amount}}</td>\r\n                            <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\r\n                          </ng-container>\r\n                    \r\n                          <ng-container matColumnDef=\"columndelete\">\r\n                            <th style=\"width:15%;\" mat-header-cell *matHeaderCellDef> </th>\r\n                            <td  mat-cell *matCellDef=\"let element\">       \r\n                              <mat-icon (click)=\"delete(element)\">delete</mat-icon> </td>\r\n                          </ng-container>\r\n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n                    <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\r\n                  </table>\r\n    </div>\r\n    <div  fxLayout=\"row wrap\" fxLayoutAlign=\"right\" class=\"order-footer\">\r\n        <h4 fxFlex=\"50%\" class=\"\">Total</h4>\r\n        <h4 fxFlex=\"50%\" class=\"total-amount\">0</h4>\r\n    </div>\r\n  \r\n</div>\r\n<div  fxLayout=\"row wrap\" fxLayoutAlign=\"center\" class=\"order-action\">\r\n    <button fxFlex=\"40%\" mat-raised-button color=\"accent\" (click)=\"printThis()\">CHECKOUT</button>\r\n    <button fxFlex=\"40%\" mat-raised-button (click)=\"clearTable()\">CANCEL</button>\r\n</div>\r\n<script>\r\n\r\n</script>"
 
 /***/ }),
 
@@ -925,6 +962,7 @@ var OrderDetailsComponent = /** @class */ (function () {
     };
     OrderDetailsComponent.prototype.ngOnInit = function () {
         this.dataSource = this.dataService.dataSource;
+        console.log(this.dataSource);
     };
     OrderDetailsComponent.prototype.ngDoCheck = function () {
         $(".qty-box").on('change', function () {
@@ -965,6 +1003,7 @@ var OrderDetailsComponent = /** @class */ (function () {
         var total;
         total = 0;
         this.dataSource.data.forEach(function (element) {
+            console.log(element.amount);
             total = total + element.amount;
         });
         console.log(total);
@@ -1183,6 +1222,7 @@ var httpOptions = {
     })
 };
 var OrdersService = /** @class */ (function () {
+    // uri = 'http://localhost:4000/business';
     function OrdersService(http) {
         this.http = http;
         this.uri = 'https://fries-factory.herokuapp.com/business';
@@ -1197,6 +1237,9 @@ var OrdersService = /** @class */ (function () {
             + (date.getMonth() + 1) + "/"
             + date.getFullYear();
         return this.http.get("" + this.uri + '?orderDate=' + currentDate).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
+    };
+    OrdersService.prototype.getSales = function () {
+        return this.http.get(this.uri + "/dailySale").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
     };
     OrdersService.prototype.getOrderById = function (orderId) {
         return this.http.get(this.uri + "/getOrderById" + '?orderId=' + orderId).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
@@ -1219,17 +1262,23 @@ var OrdersService = /** @class */ (function () {
     };
     OrdersService.prototype.addOrder = function (amount, items, deliveryBy) {
         var date = new Date();
+        var hour = 0;
         var currentDate = date.getDate() + "/"
             + (date.getMonth() + 1) + "/"
             + date.getFullYear();
-        var currentTime = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        if (date.getHours() > 12) {
+            hour = date.getHours() - 12;
+        }
+        else {
+            hour = date.getHours();
+        }
+        var currentTime = hour + ":" + date.getMinutes() + ":" + date.getSeconds();
         var orderId;
         orderId = date.getDate() + date.getMonth() + date.getFullYear() + date.getMinutes() + date.getHours() + date.getSeconds();
         var obj = {
             amount: amount,
             order_date: currentDate,
             order_time: currentTime,
-            orderId: orderId,
             deliveryBy: deliveryBy,
             items: items
         };
@@ -1330,7 +1379,7 @@ var OrdersComponent = /** @class */ (function () {
     OrdersComponent.prototype.ngOnInit = function () {
         var _this = this;
         var data = [];
-        var sum = 10;
+        var sum = 0;
         this.orders = [];
         this.postdata = [];
         this.orderService.getOrders().subscribe(function (data) {
@@ -1359,7 +1408,7 @@ var OrdersComponent = /** @class */ (function () {
     };
     OrdersComponent.prototype.getCustomDate = function (type, event) {
         var _this = this;
-        var sum = 10;
+        var sum = 0;
         var dateFrom = this.dateFrom.value.getDate() + "/"
             + (this.dateFrom.value.getMonth() + 1) + "/"
             + this.dateFrom.value.getFullYear();
@@ -1506,6 +1555,287 @@ var SaleEndComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_orders_service__WEBPACK_IMPORTED_MODULE_1__["OrdersService"]])
     ], SaleEndComponent);
     return SaleEndComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/sales/sales.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/sales/sales.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NhbGVzL3NhbGVzLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/sales/sales.component.html":
+/*!********************************************!*\
+  !*** ./src/app/sales/sales.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"page-wrapper\">\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h3 color=\"accent\" class=\"page-heading\">Today's Sale</h3></span>\n        <span class=\"example-spacer\"></span>\n        \n    </mat-toolbar>\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h4 color=\"accent\">Total Sale: <span>{{ totalSale }}</span></h4></span>\n        <span class=\"example-spacer\"></span>\n        <span><h4 color=\"accent\">Total Profit: <span>{{ totalProfit }}</span></h4></span>\n    </mat-toolbar>\n    \n    <div class=\"mat-elevation-z8\">\n    <table mat-table [dataSource]=\"dataSource\"  class=\"mat-elevation-z8 orders-table\" width=\"100%\">\n\n        <ng-container matColumnDef=\"position\">\n          <th mat-header-cell *matHeaderCellDef  class=\"item-name-th\"> Serial# </th>\n          <td mat-cell *matCellDef=\"let element; let i = index;\" class=\"item-name-td\"> {{i+1}} </td>\n        </ng-container>\n      \n        <ng-container matColumnDef=\"name\">\n          <th mat-header-cell *matHeaderCellDef> Name </th>\n          <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  >{{element.name}} </td>\n        </ng-container>\n\n        <ng-container matColumnDef=\"quantity\">\n                <th mat-header-cell *matHeaderCellDef> Quantity </th>\n                <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  >{{element.quantity}} </td>\n        </ng-container>\n\n        <ng-container matColumnDef=\"purchase\">\n            <th mat-header-cell *matHeaderCellDef> Purchasing </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  >{{element.purchase_price}} </td>\n          </ng-container>\n    \n        <ng-container matColumnDef=\"sale\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Sale </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right order-amount\">{{element.amount}}</td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"profit\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Profit </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n              {{element.amount - element.purchase_price}}\n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n        \n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n        <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\n\n    </table>\n    <mat-paginator [pageSizeOptions]=\"[5, 10, 25, 100]\"></mat-paginator>\n    \n    </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/sales/sales.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/sales/sales.component.ts ***!
+  \******************************************/
+/*! exports provided: SalesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SalesComponent", function() { return SalesComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../order-dialog/order-dialog.component */ "./src/app/order-dialog/order-dialog.component.ts");
+/* harmony import */ var _orders_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../orders.service */ "./src/app/orders.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var SalesComponent = /** @class */ (function () {
+    function SalesComponent(orderService, dataService, dialog) {
+        this.orderService = orderService;
+        this.dataService = dataService;
+        this.dialog = dialog;
+        this.totalSale = 0;
+        this.totalProfit = 0;
+        this.today = Date.now();
+        this.displayedColumns = ['position', 'name', 'quantity', 'purchase', 'sale', 'profit'];
+        this.ordersData = [];
+        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this.ordersData);
+        this.length = 100;
+        this.pageSize = 10;
+        this.pageSizeOptions = [5, 10, 25, 100];
+        this.dateFrom = new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"](new Date());
+        this.dateTo = new _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormControl"](new Date());
+    }
+    SalesComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var items = [];
+        var data = [];
+        var totalItems = [];
+        var sum = 0;
+        var todaysSale = [];
+        var totalPurchase = 0;
+        this.orders = [];
+        this.postdata = [];
+        this.orderService.getSales().subscribe(function (data) {
+            _this.postdata = data;
+            _this.dataSource.data = data;
+            _this.dataSource.paginator = _this.paginator;
+            _this.dataSource.sort = _this.sort;
+            _this.dataSource.data.forEach(function (element) {
+                sum += parseInt(element['amount']);
+            });
+            $('.total-orders-amount').html(sum);
+            _this.totalOrders();
+            _this.postdata.forEach(function (element) {
+                element.items.forEach(function (salePrice) {
+                    items.push(salePrice);
+                    totalPurchase += parseInt(salePrice.amount);
+                });
+            });
+            var sumSale = 0;
+            var sumQnty = 0;
+            var sumPurchase = 0;
+            totalItems = Array.from(new Set(items.map(function (item) { return item.name; })));
+            totalItems.forEach(function (eachItem) {
+                sumSale = 0;
+                sumQnty = 0;
+                sumPurchase = 0;
+                items.forEach(function (item) {
+                    if (eachItem == item.name) {
+                        sumPurchase += (parseInt(item.purchase_price) * parseInt(item.quantity));
+                        sumSale += parseInt(item.amount);
+                        _this.totalProfit += ((parseInt(item.sale_price) * parseInt(item.quantity)) - (parseInt(item.purchase_price) * parseInt(item.quantity)));
+                        _this.totalSale += parseInt(item.amount);
+                        sumQnty += parseInt(item.quantity);
+                    }
+                });
+                todaysSale.push({ 'name': eachItem, 'quantity': sumQnty, 'amount': sumSale, 'purchase_price': sumPurchase });
+            });
+            _this.dataSource.data = todaysSale;
+        });
+    };
+    SalesComponent.prototype.deleteOrder = function (orderId) {
+        var _this = this;
+        this.orderService.deleteOrder(orderId).subscribe(function (data) {
+            _this.orderService.getOrders().subscribe(function (data) {
+                _this.dataSource.data = data;
+            });
+        });
+    };
+    SalesComponent.prototype.getCustomDate = function (type, event) {
+        var _this = this;
+        var sum = 0;
+        var dateFrom = this.dateFrom.value.getDate() + "/"
+            + (this.dateFrom.value.getMonth() + 1) + "/"
+            + this.dateFrom.value.getFullYear();
+        var dateTo = this.dateTo.value.getDate() + "/"
+            + (this.dateTo.value.getMonth() + 1) + "/"
+            + this.dateTo.value.getFullYear();
+        console.log(dateFrom + ' - ' + dateTo);
+        this.orderService.getCustomOrders(dateFrom, dateTo).subscribe(function (data) {
+            _this.postdata = data;
+            console.log(data);
+            _this.dataSource.data = data;
+            console.log(_this.dataSource.data);
+            _this.dataSource.paginator = _this.paginator;
+            _this.dataSource.sort = _this.sort;
+            _this.dataSource.data.forEach(function (element) {
+                sum += parseInt(element['amount']);
+            });
+            $('.total-orders-amount').html(sum);
+            _this.totalOrders();
+            console.log();
+        });
+    };
+    SalesComponent.prototype.openDialog = function (orderId) {
+        var _this = this;
+        this.orderService.getOrderById(orderId).subscribe(function (data) {
+            _this.orders = data;
+            console.log(_this.orders);
+            _this.dialog.open(_order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_3__["OrderDialogComponent"], {
+                width: '450px',
+                data: { orderId: orderId, details: _this.orders }
+            });
+        });
+    };
+    SalesComponent.prototype.applyFilter = function (filterValue) {
+        this.dataSource.filter = filterValue.trim().toLowerCase();
+        if (this.dataSource.paginator) {
+            this.dataSource.paginator.firstPage();
+        }
+    };
+    SalesComponent.prototype.totalOrders = function () {
+        var orders = 0;
+        $(".orders-table tbody tr ").each(function () {
+            orders += 1;
+        });
+        $('.total-orders').html(orders);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"]),
+        __metadata("design:type", _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatPaginator"])
+    ], SalesComponent.prototype, "paginator", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSort"]),
+        __metadata("design:type", _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSort"])
+    ], SalesComponent.prototype, "sort", void 0);
+    SalesComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-sales',
+            template: __webpack_require__(/*! ./sales.component.html */ "./src/app/sales/sales.component.html"),
+            styles: [__webpack_require__(/*! ./sales.component.css */ "./src/app/sales/sales.component.css")]
+        }),
+        __metadata("design:paramtypes", [_orders_service__WEBPACK_IMPORTED_MODULE_4__["OrdersService"], _data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
+    ], SalesComponent);
+    return SalesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/stock/stock.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/stock/stock.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".hide-normal{\r\n    display: none;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3RvY2svc3RvY2suY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGNBQWM7Q0FDakIiLCJmaWxlIjoic3JjL2FwcC9zdG9jay9zdG9jay5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhpZGUtbm9ybWFse1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/stock/stock.component.html":
+/*!********************************************!*\
+  !*** ./src/app/stock/stock.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"page-wrapper\">\n  <!-- <mat-form-field>\n    <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Filter\">\n  </mat-form-field> -->\n  <h2>Stock</h2>\n  <table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\" width=\"100%\">\n  \n  \n    <ng-container matColumnDef=\"itemId\">\n      <th mat-header-cell *matHeaderCellDef> ID </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.itemId}} </td>\n    </ng-container>\n  \n  \n    <ng-container matColumnDef=\"name\">\n      <th mat-header-cell *matHeaderCellDef> Name </th>\n      <td mat-cell *matCellDef=\"let element\"> {{element.name}} </td>\n    </ng-container>\n  \n  \n    <ng-container matColumnDef=\"purchase_rate\">\n      <th mat-header-cell *matHeaderCellDef> Purchasing </th>\n      <td mat-cell *matCellDef=\"let element\" class=\"purchase-rate-group\"> \n        <!-- Edit Input -->\n        <mat-form-field class=\"example-full-width hide-normal\">\n            <input matInput value=\"{{element.purchase_price}}\">\n            <mat-icon matSuffix>mode_edit</mat-icon>\n        </mat-form-field>        \n        <p>{{element.purchase_price}}</p>\n      </td>\n    </ng-container>\n  \n  \n    <ng-container matColumnDef=\"sale_rate\">\n      <th mat-header-cell *matHeaderCellDef> Selling </th>\n      <td mat-cell *matCellDef=\"let element\" class=\"sale-rate-group\"> \n          <mat-form-field class=\"example-full-width hide-normal\">\n              <input matInput value=\"{{element.sale_price}}\">\n              <mat-icon matSuffix>mode_edit</mat-icon>\n          </mat-form-field>        \n        <p>{{element.sale_price}}</p> \n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"quantity\">\n      <th mat-header-cell *matHeaderCellDef>Stock</th>\n      <td mat-cell *matCellDef=\"let element\" class=\"stock-quantity-group\">\n          <mat-form-field class=\"example-full-width hide-normal\">\n              <input matInput value=\"{{element.stock.quantity}}\">\n              <mat-icon matSuffix>mode_edit</mat-icon>\n          </mat-form-field>        \n        <p>{{element.stock.quantity}}</p> \n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"unit\">\n      <th mat-header-cell *matHeaderCellDef>Unit </th>\n      <td mat-cell *matCellDef=\"let element\" class=\"quantity-unit-group\"> \n          <mat-form-field class=\"example-full-width hide-normal\">\n              <input matInput value=\"{{element.stock.unit}}\">\n              <mat-icon matSuffix>mode_edit</mat-icon>\n          </mat-form-field> \n       <p>{{element.stock.unit}}</p>\n      </td>\n    </ng-container>\n\n    <ng-container matColumnDef=\"action\">\n      <th mat-header-cell *matHeaderCellDef>ACTION </th>\n      <td mat-cell *matCellDef=\"let element\">\n        <button mat-raised-button color=\"accent\" class=\"edit-stock\">Edit</button>\n        <button mat-raised-button color=\"accent\" class=\"update-stock\">Update</button>\n      </td>\n    </ng-container>\n  \n    <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n    <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n  </table>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/stock/stock.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/stock/stock.component.ts ***!
+  \******************************************/
+/*! exports provided: StockComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StockComponent", function() { return StockComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _items_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../items.service */ "./src/app/items.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var StockComponent = /** @class */ (function () {
+    // applyFilter(filterValue: string) {
+    //   this.dataSource.filter = filterValue.trim().toLowerCase();
+    // }
+    function StockComponent(itemsService) {
+        this.itemsService = itemsService;
+        this.displayedColumns = ['itemId', 'name', 'purchase_rate', 'sale_rate', 'quantity', 'unit', 'action'];
+        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"]();
+    }
+    StockComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        console.log('hello');
+        this.itemsService.getItems().subscribe(function (data) {
+            _this.postdata = data;
+            _this.dataSource.data = data;
+            console.log(_this.postdata);
+        });
+        // console.log(this.itemsService.getItems());
+    };
+    StockComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-stock',
+            template: __webpack_require__(/*! ./stock.component.html */ "./src/app/stock/stock.component.html"),
+            styles: [__webpack_require__(/*! ./stock.component.css */ "./src/app/stock/stock.component.css")]
+        }),
+        __metadata("design:paramtypes", [_items_service__WEBPACK_IMPORTED_MODULE_1__["ItemsService"]])
+    ], StockComponent);
+    return StockComponent;
 }());
 
 
