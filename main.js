@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\" class=\"tool-bar\">\n    <mat-toolbar-row>\n      <span color=\"accent\" class=\"sign-off-btn\" matTooltip=\"End your today's sale\" routerLink=\"end-sale\"><i class=\"material-icons\">power_settings_new</i></span>\n      <span color=\"accent\" class=\"brand\"><img src=\"assets/logo/Logo.png\" alt=\"\"></span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"items\" class=\"item\">ITEMS</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"stock\" class=\"item\">STOCK</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"sales\" class=\"item\">SALES</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"orders\" class=\"item\">ORDERS</span>\n    </mat-toolbar-row>\n</mat-toolbar>\n"
+module.exports = "<mat-toolbar color=\"primary\" class=\"tool-bar\">\n    <mat-toolbar-row>\n      <span color=\"accent\" class=\"sign-off-btn\" matTooltip=\"End your today's sale\" routerLink=\"end-sale\"><i class=\"material-icons\">power_settings_new</i></span>\n      <span color=\"accent\" class=\"brand\"><img src=\"assets/logo/Logo.png\" alt=\"\"></span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"pricings\" class=\"item\">PRICINGS</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"items\" class=\"item\">ITEMS</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"\" class=\"item\">STOCK</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"sales\" class=\"item\">SALES</span>\n      <span color=\"accent\" routerLinkActive=\"active\" routerLink=\"orders\" class=\"item\">ORDERS</span>\n    </mat-toolbar-row>\n</mat-toolbar>\n"
 
 /***/ }),
 
@@ -103,12 +103,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./sale-end/sale-end.component */ "./src/app/sale-end/sale-end.component.ts");
 /* harmony import */ var _stock_stock_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./stock/stock.component */ "./src/app/stock/stock.component.ts");
 /* harmony import */ var _sales_sales_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sales/sales.component */ "./src/app/sales/sales.component.ts");
+/* harmony import */ var _pricings_pricings_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pricings/pricings.component */ "./src/app/pricings/pricings.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -123,6 +125,7 @@ var routes = [
     { path: 'end-sale', component: _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_4__["SaleEndComponent"] },
     { path: 'stock', component: _stock_stock_component__WEBPACK_IMPORTED_MODULE_5__["StockComponent"] },
     { path: 'sales', component: _sales_sales_component__WEBPACK_IMPORTED_MODULE_6__["SalesComponent"] },
+    { path: 'pricings', component: _pricings_pricings_component__WEBPACK_IMPORTED_MODULE_7__["PricingsComponent"] },
     { path: '', component: _items_items_component__WEBPACK_IMPORTED_MODULE_3__["ItemsComponent"] },
     { path: '', redirectTo: '', pathMatch: 'full' }
 ];
@@ -252,6 +255,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./sale-end/sale-end.component */ "./src/app/sale-end/sale-end.component.ts");
 /* harmony import */ var _stock_stock_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./stock/stock.component */ "./src/app/stock/stock.component.ts");
 /* harmony import */ var _sales_sales_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./sales/sales.component */ "./src/app/sales/sales.component.ts");
+/* harmony import */ var _pricings_pricings_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pricings/pricings.component */ "./src/app/pricings/pricings.component.ts");
+/* harmony import */ var _pricing_dialog_pricing_dialog_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./pricing-dialog/pricing-dialog.component */ "./src/app/pricing-dialog/pricing-dialog.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -263,6 +268,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 // import { MatGridListModule } from '@angular/material/grid-list';
+
+
 
 
 
@@ -316,6 +323,8 @@ var AppModule = /** @class */ (function () {
                 _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_35__["SaleEndComponent"],
                 _stock_stock_component__WEBPACK_IMPORTED_MODULE_36__["StockComponent"],
                 _sales_sales_component__WEBPACK_IMPORTED_MODULE_37__["SalesComponent"],
+                _pricings_pricings_component__WEBPACK_IMPORTED_MODULE_38__["PricingsComponent"],
+                _pricing_dialog_pricing_dialog_component__WEBPACK_IMPORTED_MODULE_39__["PricingDialogComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__["FlexLayoutModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__["MatDialogModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_17__["MatInputModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_18__["MatCheckboxModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_19__["MatTableModule"],
@@ -332,6 +341,7 @@ var AppModule = /** @class */ (function () {
             entryComponents: [
                 _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_16__["ItemDialogComponent"],
                 _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_32__["OrderDialogComponent"],
+                _pricing_dialog_pricing_dialog_component__WEBPACK_IMPORTED_MODULE_39__["PricingDialogComponent"],
             ],
             providers: [_data_service__WEBPACK_IMPORTED_MODULE_28__["DataService"], _orders_service__WEBPACK_IMPORTED_MODULE_33__["OrdersService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -775,7 +785,7 @@ var httpOptions = {
 var ItemsService = /** @class */ (function () {
     function ItemsService(http) {
         this.http = http;
-        this.uri = 'http://localhost:4000/business';
+        this.uri = 'https://fries-factory.herokuapp.com/business';
     }
     ItemsService.prototype.extractData = function (res) {
         var body = res;
@@ -783,6 +793,9 @@ var ItemsService = /** @class */ (function () {
     };
     ItemsService.prototype.getItems = function () {
         return this.http.get(this.uri + "/items").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
+    };
+    ItemsService.prototype.getItemById = function (itemId) {
+        return this.http.get(this.uri + "/getItemById/", { params: { itemId: itemId } }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
     };
     ItemsService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1263,16 +1276,19 @@ var OrdersService = /** @class */ (function () {
     OrdersService.prototype.addOrder = function (amount, items, deliveryBy) {
         var date = new Date();
         var hour = 0;
+        var format = 0;
         var currentDate = date.getDate() + "/"
             + (date.getMonth() + 1) + "/"
             + date.getFullYear();
         if (date.getHours() > 12) {
             hour = date.getHours() - 12;
+            format = 'PM';
         }
         else {
             hour = date.getHours();
+            format = 'AM';
         }
-        var currentTime = hour + ":" + date.getMinutes() + ":" + date.getSeconds();
+        var currentTime = hour + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + format;
         var orderId;
         orderId = date.getDate() + date.getMonth() + date.getFullYear() + date.getMinutes() + date.getHours() + date.getSeconds();
         var obj = {
@@ -1472,6 +1488,176 @@ var OrdersComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_orders_service__WEBPACK_IMPORTED_MODULE_4__["OrdersService"], _data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
     ], OrdersComponent);
     return OrdersComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pricing-dialog/pricing-dialog.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/pricing-dialog/pricing-dialog.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".table-pricing thead tr{\r\n    background: black;\r\n    color: white;\r\n}\r\n\r\n.table-pricing thead th{\r\n    padding: 5px 10px;\r\n    text-align: left;\r\n}\r\n\r\n.no-btn{\r\n    flex: 1;\r\n}\r\n\r\ntr{\r\n    border: solid;\r\n    border-width: 1px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJpY2luZy1kaWFsb2cvcHJpY2luZy1kaWFsb2cuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQjtJQUNsQixhQUFhO0NBQ2hCOztBQUVEO0lBQ0ksa0JBQWtCO0lBQ2xCLGlCQUFpQjtDQUNwQjs7QUFFRDtJQUNJLFFBQVE7Q0FDWDs7QUFFRDtJQUNJLGNBQWM7SUFDZCxrQkFBa0I7Q0FDckIiLCJmaWxlIjoic3JjL2FwcC9wcmljaW5nLWRpYWxvZy9wcmljaW5nLWRpYWxvZy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRhYmxlLXByaWNpbmcgdGhlYWQgdHJ7XHJcbiAgICBiYWNrZ3JvdW5kOiBibGFjaztcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLnRhYmxlLXByaWNpbmcgdGhlYWQgdGh7XHJcbiAgICBwYWRkaW5nOiA1cHggMTBweDtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbn1cclxuXHJcbi5uby1idG57XHJcbiAgICBmbGV4OiAxO1xyXG59XHJcblxyXG50cntcclxuICAgIGJvcmRlcjogc29saWQ7XHJcbiAgICBib3JkZXItd2lkdGg6IDFweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pricing-dialog/pricing-dialog.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/pricing-dialog/pricing-dialog.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"\">\n    <table class=\"table-pricing\" width=\"100%\">\n        <thead>\n          <tr>\n            <th>Name</th>\n            <th>Purchasing</th>\n            <th>Selling</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>{{itemData.details.name}}</td>\n            <td>{{itemData.details.purchase_price}}</td>\n            <td>{{itemData.details.sale_price}}</td>\n          </tr>\n        </tbody>\n    </table>\n</div>\n<div mat-dialog-actions>\n  <div class=\"no-btn\">\n    <button mat-button (click)=\"onNoClick()\" class=\"no-btn\">No Thanks</button>\n  </div>\n  <div class=\"yes-btn\">\n    <button mat-button [mat-dialog-close] cdkFocusInitial class=\"update-btn\">Update</button>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pricing-dialog/pricing-dialog.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/pricing-dialog/pricing-dialog.component.ts ***!
+  \************************************************************/
+/*! exports provided: PricingDialogComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PricingDialogComponent", function() { return PricingDialogComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+
+var PricingDialogComponent = /** @class */ (function () {
+    function PricingDialogComponent(data, dialogRef) {
+        this.data = data;
+        this.dialogRef = dialogRef;
+        this.displayedColumns = ['name', 'purchase_rate', 'sale_rate', 'action'];
+        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatTableDataSource"]();
+    }
+    PricingDialogComponent.prototype.onNoClick = function () {
+        this.dialogRef.close();
+    };
+    PricingDialogComponent.prototype.ngOnInit = function () {
+        this.itemData = this.data;
+        this.dataSource.data = this.itemData.details;
+        console.log(this.itemData.details);
+    };
+    PricingDialogComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-pricing-dialog',
+            template: __webpack_require__(/*! ./pricing-dialog.component.html */ "./src/app/pricing-dialog/pricing-dialog.component.html"),
+            styles: [__webpack_require__(/*! ./pricing-dialog.component.css */ "./src/app/pricing-dialog/pricing-dialog.component.css")]
+        }),
+        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"])),
+        __metadata("design:paramtypes", [Object, _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"]])
+    ], PricingDialogComponent);
+    return PricingDialogComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pricings/pricings.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/pricings/pricings.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ByaWNpbmdzL3ByaWNpbmdzLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/pricings/pricings.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/pricings/pricings.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"page-wrapper\">\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h3 color=\"accent\" class=\"page-heading\">Pricings</h3></span>\n        <span class=\"example-spacer\"></span>\n    </mat-toolbar>\n    <div class=\"mat-elevation-z8\">\n        <table mat-table [dataSource]=\"dataSource\"  class=\"mat-elevation-z8 orders-table\" width=\"100%\">\n\n            <ng-container matColumnDef=\"position\">\n              <th mat-header-cell *matHeaderCellDef  class=\"item-name-th\"> Serial# </th>\n              <td mat-cell *matCellDef=\"let element; let i = index;\" class=\"item-name-td\"> {{i+1}} </td>\n            </ng-container>\n        \n            <ng-container matColumnDef=\"name\">\n                <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Name </th>\n                <td mat-cell *matCellDef=\"let element\" class=\"text-right order-amount\">{{element.name}}</td>\n            </ng-container>\n\n            <ng-container matColumnDef=\"purchase_rate\">\n                <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Purchasing </th>\n                <td mat-cell *matCellDef=\"let element\" class=\"text-right order-amount\">{{element.purchase_price}}</td>\n            </ng-container>\n\n            <ng-container matColumnDef=\"sale_rate\">\n                <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Selling </th>\n                <td mat-cell *matCellDef=\"let element\" class=\"text-right order-amount\">{{element.sale_price}}</td>\n            </ng-container>\n\n            <ng-container matColumnDef=\"action\">\n                <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Action </th>\n                <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n                    <button mat-raised-button color=\"accent\" (click)=\"openDialog(element._id)\">Edit</button>\n                    <button mat-raised-button color=\"warn\" (click)=\"deleteOrder(element._id)\">Delete</button>\n                </td>\n            </ng-container>\n            \n            <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n            <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n        </table>\n    </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/pricings/pricings.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/pricings/pricings.component.ts ***!
+  \************************************************/
+/*! exports provided: PricingsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PricingsComponent", function() { return PricingsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _items_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../items.service */ "./src/app/items.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _pricing_dialog_pricing_dialog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pricing-dialog/pricing-dialog.component */ "./src/app/pricing-dialog/pricing-dialog.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var PricingsComponent = /** @class */ (function () {
+    function PricingsComponent(itemsService, dialog) {
+        this.itemsService = itemsService;
+        this.dialog = dialog;
+        this.displayedColumns = ['position', 'name', 'purchase_rate', 'sale_rate', 'action'];
+        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"]();
+    }
+    PricingsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.itemsService.getItems().subscribe(function (data) {
+            _this.postdata = data;
+            _this.dataSource.data = data;
+            _this.item = [];
+        });
+    };
+    PricingsComponent.prototype.openDialog = function (itemId) {
+        var _this = this;
+        this.itemsService.getItemById(itemId).subscribe(function (data) {
+            _this.item = data;
+            _this.dialog.open(_pricing_dialog_pricing_dialog_component__WEBPACK_IMPORTED_MODULE_3__["PricingDialogComponent"], {
+                width: '650px',
+                data: { itemId: itemId, details: _this.item }
+            });
+        });
+    };
+    PricingsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-pricings',
+            template: __webpack_require__(/*! ./pricings.component.html */ "./src/app/pricings/pricings.component.html"),
+            styles: [__webpack_require__(/*! ./pricings.component.css */ "./src/app/pricings/pricings.component.css")]
+        }),
+        __metadata("design:paramtypes", [_items_service__WEBPACK_IMPORTED_MODULE_1__["ItemsService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
+    ], PricingsComponent);
+    return PricingsComponent;
 }());
 
 
@@ -1819,7 +2005,6 @@ var StockComponent = /** @class */ (function () {
     }
     StockComponent.prototype.ngOnInit = function () {
         var _this = this;
-        console.log('hello');
         this.itemsService.getItems().subscribe(function (data) {
             _this.postdata = data;
             _this.dataSource.data = data;
