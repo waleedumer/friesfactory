@@ -61,7 +61,7 @@
       "id": "CLF-006",
       "name": "Curly Fries",
       "type": "curly-fries",
-      "img": "assets/side.jpg",
+      "img": "assets/curli.jpg",
       "details": [
         {"name":"Curly Fries (R)", "amount": "200"},
         {"name":"Curly Fries (L)", "amount": "250"}
