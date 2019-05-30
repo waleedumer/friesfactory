@@ -412,6 +412,18 @@ var ELEMENT_DATA = [
     { position: 6, name: 'Cloud Green', price: '0', size: '', amount: 0 },
     { position: 7, name: 'Winky Twister', price: '0', size: '', amount: 0 },
     { position: 8, name: 'Mayo-Li', price: '0', size: '', amount: 0 },
+    { position: 9, name: 'Bar-b-q Pizza Fries', price: '300', size: '', amount: 0 },
+    { position: 10, name: 'Cream Chicken Pizza Fires', price: '300', size: '', amount: 0 },
+    { position: 11, name: 'Chicken Fajita Pizza Fries', price: '300', size: '', amount: 0 },
+    { position: 12, name: 'Supreme Pizza Fries', price: '350', size: '', amount: 0 },
+    { position: 13, name: 'Nuggets (8 pcs)', price: '225', size: '', amount: 0 },
+    { position: 14, name: 'Wings (8 pcs)', price: '250', size: '', amount: 0 },
+    { position: 15, name: 'CD (350ml)', price: '30', size: '', amount: 0 },
+    { position: 16, name: 'CD (500ml)', price: '50', size: '', amount: 0 },
+    { position: 17, name: 'CD (1.5Ltr)', price: '100', size: '', amount: 0 },
+    { position: 18, name: 'Aqua Fina (500ml)', price: '30', size: '', amount: 0 },
+    { position: 19, name: 'Curly Fries-R', price: '200', size: '', amount: 0 },
+    { position: 20, name: 'Curly Fries-L', price: '250', size: '', amount: 0 },
 ];
 var BillItemsComponent = /** @class */ (function () {
     function BillItemsComponent(renderer, el) {
@@ -420,7 +432,10 @@ var BillItemsComponent = /** @class */ (function () {
         this.displayedColumns = ['position', 'name', 'email', 'amount'];
         this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]();
         this.options = ['Straight Cut Fries-R', 'Straight Cut Fries-M', 'Straight Cut Fries-L',
-            'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li'];
+            'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li', 'Bar-b-q Pizza Fries',
+            'Cream Chicken Pizza Fires', 'Chicken Fajita Pizza Fries', 'Supreme Pizza Fries',
+            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml', 'Curly Fries-R', 'Curly Fries-L'
+        ];
         this.selectedtableData = [];
     }
     BillItemsComponent.prototype.ngOnInit = function () {
@@ -512,11 +527,11 @@ var ELEMENT_DATA = [
     { position: 1, name: 'Straight Cut Fries-R', purchase_price: '70.5', sale_price: '125', size: 'Regular', amount: 0, 'quantity': 0 },
     { position: 2, name: 'Straight Cut Fries-M', purchase_price: '96', sale_price: '175', size: 'Medium', amount: 0, 'quantity': 0 },
     { position: 3, name: 'Straight Cut Fries-L', purchase_price: '105.2', sale_price: '225', size: 'Regular', amount: 0, 'quantity': 0 },
-    { position: 4, name: 'Tangled Tango', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 5, name: 'Eldorado Buzz', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 6, name: 'Cloud Green', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 7, name: 'Winky Twister', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
-    { position: 8, name: 'Mayo-Li', purchase_price: '12', sale_price: '0', size: '', amount: 0, 'quantity': 0 },
+    { position: 4, name: 'Tangled Tango', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 5, name: 'Eldorado Buzz', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 6, name: 'Cloud Green', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 7, name: 'Winky Twister', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 8, name: 'Mayo-Li', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
     { position: 9, name: 'Bar-b-q Pizza Fries', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
     { position: 10, name: 'Cream Chicken Pizza Fires', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
     { position: 11, name: 'Chicken Fajita Pizza Fries', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
@@ -527,21 +542,53 @@ var ELEMENT_DATA = [
     { position: 16, name: 'CD (500ml)', purchase_price: '50', sale_price: '50', size: '', amount: 0, 'quantity': 0 },
     { position: 17, name: 'CD (1.5Ltr)', purchase_price: '100', sale_price: '100', size: '', amount: 0, 'quantity': 0 },
     { position: 18, name: 'Aqua Fina (500ml)', purchase_price: '30', sale_price: '30', size: '', amount: 0, 'quantity': 0 },
+    { position: 19, name: 'Curly Fries (R)', purchase_price: '150', sale_price: '200', size: '', amount: 0, 'quantity': 0 },
+    { position: 20, name: 'Curly Fries (L)', purchase_price: '180', sale_price: '250', size: '', amount: 0, 'quantity': 0 },
+];
+var itemsList = [
+    { position: 1, name: 'Straight Cut Fries-R', purchase_price: '70.5', sale_price: '125', size: 'Regular', amount: 0, 'quantity': 0 },
+    { position: 2, name: 'Straight Cut Fries-M', purchase_price: '96', sale_price: '175', size: 'Medium', amount: 0, 'quantity': 0 },
+    { position: 3, name: 'Straight Cut Fries-L', purchase_price: '105.2', sale_price: '225', size: 'Regular', amount: 0, 'quantity': 0 },
+    { position: 4, name: 'Tangled Tango', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 5, name: 'Eldorado Buzz', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 6, name: 'Cloud Green', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 7, name: 'Winky Twister', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 8, name: 'Mayo-Li', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 9, name: 'Bar-b-q Pizza Fries', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 10, name: 'Cream Chicken Pizza Fires', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 11, name: 'Chicken Fajita Pizza Fries', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 12, name: 'Supreme Pizza Fries', purchase_price: '182.5', sale_price: '350', size: '', amount: 0, 'quantity': 0 },
+    { position: 13, name: 'Nuggets (8 pcs)', purchase_price: '100.4', sale_price: '225', size: '', amount: 0, 'quantity': 0 },
+    { position: 14, name: 'Wings (8 pcs)', purchase_price: '154.5', sale_price: '250', size: '', amount: 0, 'quantity': 0 },
+    { position: 15, name: 'CD (350ml)', purchase_price: '30', sale_price: '30', size: '', amount: 0, 'quantity': 0 },
+    { position: 16, name: 'CD (500ml)', purchase_price: '50', sale_price: '50', size: '', amount: 0, 'quantity': 0 },
+    { position: 17, name: 'CD (1.5Ltr)', purchase_price: '100', sale_price: '100', size: '', amount: 0, 'quantity': 0 },
+    { position: 18, name: 'Aqua Fina (500ml)', purchase_price: '30', sale_price: '30', size: '', amount: 0, 'quantity': 0 },
+    { position: 19, name: 'Curly Fries-R', purchase_price: '150', sale_price: '200', size: '', amount: 0, 'quantity': 0 },
+    { position: 20, name: 'Curly Fries-L', purchase_price: '180', sale_price: '250', size: '', amount: 0, 'quantity': 0 },
 ];
 var DataService = /** @class */ (function () {
     function DataService(_http) {
+        var _this = this;
         this._http = _http;
         this.displayedColumns = ['position', 'name', 'email', 'amount', 'quantity', 'columndelete'];
         //myControl = new FormControl();
         this.options = ['Straight Cut Fries-R', 'Straight Cut Fries-M', 'Straight Cut Fries-L',
             'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li', 'Bar-b-q Pizza Fries',
             'Cream Chicken Pizza Fires', 'Chicken Fajita Pizza Fries', 'Supreme Pizza Fries',
-            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml'
+            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 200ml', 'Curly Fries-R', 'Curly Fries-L'
         ];
         this.selectedtableData = [];
+        this.uri = 'https://fries-factory.herokuapp.com/business';
+        this.getItemsList().subscribe(function (data) {
+            _this.items = data;
+        });
     }
     DataService.prototype.getItems = function () {
         return this._http.get('assets/items.json');
+    };
+    DataService.prototype.getItemsList = function () {
+        return this._http.get(this.uri + "/items").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(this.extractData));
     };
     DataService.prototype.extractData = function (res) {
         var body = res;
@@ -574,9 +621,10 @@ var DataService = /** @class */ (function () {
             console.log("Error", error);
         });
     };
+    // postData: any;
     DataService.prototype.addOrder = function () {
-        var _this = this;
         // console.log(this.selectedtableData);
+        var _this = this;
         var jsonObj = [];
         var jsonQnty = [];
         $('.table-item tbody tr').each(function () {
@@ -584,16 +632,16 @@ var DataService = /** @class */ (function () {
             if (checkbox == 'true') {
                 var selectedValue_1 = $(this).find('.tr-item-name').text();
                 var qunty = $(this).find('.quantity-box').val();
-                var selectedvalueArr = ELEMENT_DATA.find(function (e) { return e.name == selectedValue_1; });
+                console.log(selectedValue_1);
+                var selectedvalueArr = ELEMENT_DATA.find(function (e) { return e.name === selectedValue_1; });
                 selectedvalueArr.quantity = qunty;
                 selectedvalueArr.amount = qunty * selectedvalueArr.sale_price;
-                // console.log(selectedvalueArr);
                 jsonObj.push(selectedvalueArr);
                 jsonQnty.push(qunty);
             }
         });
         jsonObj.forEach(function (element) {
-            //console.log(element);
+            // console.log(element);
             _this.selectedtableData.push(element);
         });
         jsonQnty.forEach(function (element) {
@@ -663,6 +711,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _products_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../products.service */ "./src/app/products.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -675,6 +724,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+
 
 
 
@@ -697,18 +747,21 @@ var ELEMENT_DATA = [
     { position: 16, name: 'CD (500ml)', purchase_price: '', sale_price: '50', size: '', amount: 0 },
     { position: 17, name: 'CD (1.5Ltr)', purchase_price: '', sale_price: '100', size: '', amount: 0 },
     { position: 18, name: 'Aqua Fina (500ml)', purchase_price: '', sale_price: '30', size: '', amount: 0 },
+    { position: 19, name: 'Curly Fries-R', purchase_price: '', sale_price: '200', size: '', amount: 0 },
+    { position: 20, name: 'Curly Fries-L', purchase_price: '', sale_price: '250', size: '', amount: 0 },
 ];
 var ItemDialogComponent = /** @class */ (function () {
-    function ItemDialogComponent(dialogRef, data, dataAdd) {
+    function ItemDialogComponent(dialogRef, data, dataAdd, productData) {
         this.dialogRef = dialogRef;
         this.data = data;
         this.dataAdd = dataAdd;
+        this.productData = productData;
         this.displayedColumns = ['position', 'name', 'email', 'amount', 'columndelete'];
         //myControl = new FormControl();
         this.options = ['Straight Cut Fries-R', 'Straight Cut Fries-M', 'Straight Cut Fries-L',
             'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li', 'Bar-b-q Pizza Fries',
             'Cream Chicken Pizza Fires', 'Chicken Fajita Pizza Fries', 'Supreme Pizza Fries',
-            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml'
+            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml', 'Curly Fries-R', 'Curly Fries-L'
         ];
         this.selectedtableDataNew = [];
     }
@@ -718,10 +771,11 @@ var ItemDialogComponent = /** @class */ (function () {
     ItemDialogComponent.prototype.ngOnInit = function () {
         $(document).ready(function () {
             $('.add-order').click(function () {
+                // alert();
                 var values = new Array();
                 $(".table-item tr").each(function () {
                     if ($(this).find("selected-item").is("aria-checked", "true")) {
-                        alert();
+                        // alert();
                         values.push($(this).find("td:eq(1)").html());
                     }
                     // console.log(checkedRows);    
@@ -741,7 +795,7 @@ var ItemDialogComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./item-dialog.component.scss */ "./src/app/item-dialog/item-dialog.component.scss")]
         }),
         __param(1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"])),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"], Object, _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"], Object, _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"], _products_service__WEBPACK_IMPORTED_MODULE_3__["ProductsService"]])
     ], ItemDialogComponent);
     return ItemDialogComponent;
 }());
@@ -943,6 +997,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
 /* harmony import */ var _orders_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../orders.service */ "./src/app/orders.service.ts");
+/* harmony import */ var _products_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../products.service */ "./src/app/products.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -956,13 +1011,15 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var OrderDetailsComponent = /** @class */ (function () {
-    function OrderDetailsComponent(orderService, renderer, el, zone, dataService) {
+    function OrderDetailsComponent(orderService, renderer, el, zone, dataService, productService) {
         this.orderService = orderService;
         this.renderer = renderer;
         this.el = el;
         this.zone = zone;
         this.dataService = dataService;
+        this.productService = productService;
         this.today = Date.now();
         this.displayedColumns = ['position', 'name', 'email', 'amount', 'columndelete'];
         this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]();
@@ -989,6 +1046,7 @@ var OrderDetailsComponent = /** @class */ (function () {
         });
         this.sumTotal();
         this.dataSource = this.dataService.dataSource;
+        // this.dataSource =  this.productService.dataSource;
     };
     OrderDetailsComponent.prototype.sumTotal = function () {
         var sum = 0;
@@ -1055,7 +1113,7 @@ var OrderDetailsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./order-details.component.html */ "./src/app/order-details/order-details.component.html"),
             styles: [__webpack_require__(/*! ./order-details.component.scss */ "./src/app/order-details/order-details.component.scss")]
         }),
-        __metadata("design:paramtypes", [_orders_service__WEBPACK_IMPORTED_MODULE_3__["OrdersService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
+        __metadata("design:paramtypes", [_orders_service__WEBPACK_IMPORTED_MODULE_3__["OrdersService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"], _products_service__WEBPACK_IMPORTED_MODULE_4__["ProductsService"]])
     ], OrderDetailsComponent);
     return OrderDetailsComponent;
 }());
@@ -1658,6 +1716,115 @@ var PricingsComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_items_service__WEBPACK_IMPORTED_MODULE_1__["ItemsService"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
     ], PricingsComponent);
     return PricingsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/products.service.ts":
+/*!*************************************!*\
+  !*** ./src/app/products.service.ts ***!
+  \*************************************/
+/*! exports provided: ProductsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductsService", function() { return ProductsService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var endpoint = 'https://waleedumer.github.io/friesfactory/api';
+var ELEMENT_DATA = [
+    { position: 1, name: 'Straight Cut Fries-R', purchase_price: '70.5', sale_price: '125', size: 'Regular', amount: 0, 'quantity': 0 },
+    { position: 2, name: 'Straight Cut Fries-M', purchase_price: '96', sale_price: '175', size: 'Medium', amount: 0, 'quantity': 0 },
+    { position: 3, name: 'Straight Cut Fries-L', purchase_price: '105.2', sale_price: '225', size: 'Regular', amount: 0, 'quantity': 0 },
+    { position: 4, name: 'Tangled Tango', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 5, name: 'Eldorado Buzz', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 6, name: 'Cloud Green', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 7, name: 'Winky Twister', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 8, name: 'Mayo-Li', purchase_price: '12', sale_price: '20', size: '', amount: 0, 'quantity': 0 },
+    { position: 9, name: 'Bar-b-q Pizza Fries', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 10, name: 'Cream Chicken Pizza Fires', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 11, name: 'Chicken Fajita Pizza Fries', purchase_price: '182.5', sale_price: '300', size: '', amount: 0, 'quantity': 0 },
+    { position: 12, name: 'Supreme Pizza Fries', purchase_price: '182.5', sale_price: '350', size: '', amount: 0, 'quantity': 0 },
+    { position: 13, name: 'Nuggets (8 pcs)', purchase_price: '100.4', sale_price: '225', size: '', amount: 0, 'quantity': 0 },
+    { position: 14, name: 'Wings (8 pcs)', purchase_price: '154.5', sale_price: '250', size: '', amount: 0, 'quantity': 0 },
+    { position: 15, name: 'CD (350ml)', purchase_price: '30', sale_price: '30', size: '', amount: 0, 'quantity': 0 },
+    { position: 16, name: 'CD (500ml)', purchase_price: '50', sale_price: '50', size: '', amount: 0, 'quantity': 0 },
+    { position: 17, name: 'CD (1.5Ltr)', purchase_price: '100', sale_price: '100', size: '', amount: 0, 'quantity': 0 },
+    { position: 18, name: 'Aqua Fina (500ml)', purchase_price: '30', sale_price: '30', size: '', amount: 0, 'quantity': 0 },
+    { position: 19, name: 'CD (550ml)', purchase_price: '150', sale_price: '200', size: '', amount: 0, 'quantity': 0 },
+    { position: 20, name: 'CD (560ml)', purchase_price: '180', sale_price: '250', size: '', amount: 0, 'quantity': 0 },
+];
+var ProductsService = /** @class */ (function () {
+    function ProductsService(_http) {
+        var _this = this;
+        this._http = _http;
+        this.selectedtableData = [];
+        this.uri = 'https://fries-factory.herokuapp.com/business';
+        this.getItemsList().subscribe(function (data) {
+            _this.items = data;
+        });
+    }
+    ProductsService.prototype.getItemsList = function () {
+        return this._http.get(this.uri + "/items").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(this.extractData));
+    };
+    ProductsService.prototype.addOrderNew = function () {
+        // console.log(this.selectedtableData);
+        var _this = this;
+        var jsonObj = [];
+        var jsonQnty = [];
+        $('.table-item tbody tr').each(function () {
+            var checkbox = $(this).find('.mat-checkbox-input').attr('aria-checked');
+            if (checkbox == 'true') {
+                var selectedValue = $(this).find('.tr-item-name').text();
+                var qunty = $(this).find('.quantity-box').val();
+                console.log(selectedValue);
+                var selectedvalueArr = ELEMENT_DATA.find(function (e) { return e.name === 'CD (550ml)'; });
+                selectedvalueArr.quantity = qunty;
+                selectedvalueArr.amount = qunty * selectedvalueArr.sale_price;
+                jsonObj.push(selectedvalueArr);
+                jsonQnty.push(qunty);
+            }
+        });
+        jsonObj.forEach(function (element) {
+            // console.log(element);
+            _this.selectedtableData.push(element);
+        });
+        jsonQnty.forEach(function (element) {
+            _this.selectedtableData;
+        });
+        this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatTableDataSource"](this.selectedtableData);
+        this.dataSource._updateChangeSubscription();
+        console.log(this.dataSource.data);
+    };
+    ProductsService.prototype.extractData = function (res) {
+        var body = res;
+        return body || {};
+    };
+    ProductsService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], ProductsService);
+    return ProductsService;
 }());
 
 
