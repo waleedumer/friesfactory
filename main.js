@@ -1091,25 +1091,41 @@ var OrderDetailsComponent = /** @class */ (function () {
         this.orderService.getOrders().subscribe(function (data) {
             _this.orderNumber = data.length;
             console.log(data.length);
+            var currentdate = new Date();
+            var datetime = currentdate.getDate() + "/"
+                + (currentdate.getMonth() + 1) + "/"
+                + currentdate.getFullYear() + " | "
+                + currentdate.getHours() + ":"
+                + currentdate.getMinutes() + ":"
+                + currentdate.getSeconds();
+            var orderNo = parseInt(_this.orderNumber) + 1;
+            var address = "<h6 style='text-align: center;font-size: 20px;font-family: Arial, Helvetica, sans-serif;font-weight: 500;'>Order No. " + orderNo + "</h6><h6 style='text-align: center;font-size: 10px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>(" + _this.deliverBy + ")</h6><h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>The Mall of Layalpur<br>Harianwala Chowk Faisalabad<br>0315 0104553</h6>";
+            var credits = "<p class='credits' style='text-align:center; font-size:4px;margin-top:3px;'>Software Developed by JNW Projects<br>0323-7627567</p>";
+            var footer = "<h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>Thank You, please come again</h6>" + credits;
+            $('.print-receipt').printThis({
+                loadCSS: ['/assets/css/order-bill.css', "https://waleedumer.github.io/friesfactory/assets/css/order-bill.css"],
+                header: '<small style="font-size: 5px;">' + datetime + '</small><p class="center-logo" style="text-align:center; margin: 5px 0;"><img style="width:40%;" src="https://waleedumer.github.io/friesfactory/assets/logo/BillLogo.png" /></p>' + address,
+                footer: footer
+            });
         });
         this.orderService.addOrder(total, this.dataSource.data, this.deliverBy);
         console.log(this.orderNumber);
-        var currentdate = new Date();
-        var datetime = currentdate.getDate() + "/"
-            + (currentdate.getMonth() + 1) + "/"
-            + currentdate.getFullYear() + " | "
-            + currentdate.getHours() + ":"
-            + currentdate.getMinutes() + ":"
-            + currentdate.getSeconds();
-        var orderNo = parseInt(this.orderNumber) + 1;
-        var address = "<h6 style='text-align: center;font-size: 20px;font-family: Arial, Helvetica, sans-serif;font-weight: 500;'>Order No. " + orderNo + "</h6><h6 style='text-align: center;font-size: 10px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>(" + this.deliverBy + ")</h6><h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>The Mall of Layalpur<br>Harianwala Chowk Faisalabad<br>0315 0104553</h6>";
-        var credits = "<p class='credits' style='text-align:center; font-size:4px;margin-top:3px;'>Software Developed by JNW Projects<br>0323-7627567</p>";
-        var footer = "<h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>Thank You, please come again</h6>" + credits;
-        $('.print-receipt').printThis({
-            loadCSS: ['/assets/css/order-bill.css', "https://waleedumer.github.io/friesfactory/assets/css/order-bill.css"],
-            header: '<small style="font-size: 5px;">' + datetime + '</small><p class="center-logo" style="text-align:center; margin: 5px 0;"><img style="width:40%;" src="https://waleedumer.github.io/friesfactory/assets/logo/BillLogo.png" /></p>' + address,
-            footer: footer
-        });
+        // var currentdate = new Date(); 
+        // var datetime = currentdate.getDate() + "/"
+        //                 + (currentdate.getMonth()+1)  + "/" 
+        //                 + currentdate.getFullYear() + " | "  
+        //                 + currentdate.getHours() + ":"  
+        //                 + currentdate.getMinutes() + ":" 
+        //                 + currentdate.getSeconds();
+        //   var orderNo = parseInt(this.orderNumber) + 1;
+        //   var address = "<h6 style='text-align: center;font-size: 20px;font-family: Arial, Helvetica, sans-serif;font-weight: 500;'>Order No. "+ orderNo +"</h6><h6 style='text-align: center;font-size: 10px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>("+this.deliverBy+")</h6><h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>The Mall of Layalpur<br>Harianwala Chowk Faisalabad<br>0315 0104553</h6>";
+        //   var credits = "<p class='credits' style='text-align:center; font-size:4px;margin-top:3px;'>Software Developed by JNW Projects<br>0323-7627567</p>";
+        //   var footer ="<h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>Thank You, please come again</h6>"+credits;
+        //  $('.print-receipt').printThis({
+        //   loadCSS: ['/assets/css/order-bill.css',"https://waleedumer.github.io/friesfactory/assets/css/order-bill.css"],
+        //   header:'<small style="font-size: 5px;">'+datetime+'</small><p class="center-logo" style="text-align:center; margin: 5px 0;"><img style="width:40%;" src="https://waleedumer.github.io/friesfactory/assets/logo/BillLogo.png" /></p>'+address,
+        //   footer: footer
+        //  });
     };
     OrderDetailsComponent.prototype.showIems = function (orderId) {
         var date = new Date();
