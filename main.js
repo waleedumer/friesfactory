@@ -221,34 +221,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/toolbar */ "./node_modules/@angular/material/esm5/toolbar.es5.js");
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
-/* harmony import */ var _app_header_app_header_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-header/app-header.component */ "./src/app/app-header/app-header.component.ts");
-/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
-/* harmony import */ var _order_window_order_window_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./order-window/order-window.component */ "./src/app/order-window/order-window.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _items_items_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./items/items.component */ "./src/app/items/items.component.ts");
-/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
-/* harmony import */ var _order_details_order_details_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./order-details/order-details.component */ "./src/app/order-details/order-details.component.ts");
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm5/dialog.es5.js");
-/* harmony import */ var _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./item-dialog/item-dialog.component */ "./src/app/item-dialog/item-dialog.component.ts");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
-/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm5/checkbox.es5.js");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/material/autocomplete */ "./node_modules/@angular/material/esm5/autocomplete.es5.js");
-/* harmony import */ var _bill_items_bill_items_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./bill-items/bill-items.component */ "./src/app/bill-items/bill-items.component.ts");
-/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm5/radio.es5.js");
-/* harmony import */ var print_this__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! print-this */ "./node_modules/print-this/printThis.js");
-/* harmony import */ var print_this__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(print_this__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var _orders_orders_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./orders/orders.component */ "./src/app/orders/orders.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./data.service */ "./src/app/data.service.ts");
-/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
+/* harmony import */ var _app_header_app_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-header/app-header.component */ "./src/app/app-header/app-header.component.ts");
+/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/menu */ "./node_modules/@angular/material/esm5/menu.es5.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var _order_window_order_window_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./order-window/order-window.component */ "./src/app/order-window/order-window.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _items_items_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./items/items.component */ "./src/app/items/items.component.ts");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
+/* harmony import */ var _order_details_order_details_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./order-details/order-details.component */ "./src/app/order-details/order-details.component.ts");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/esm5/dialog.es5.js");
+/* harmony import */ var _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./item-dialog/item-dialog.component */ "./src/app/item-dialog/item-dialog.component.ts");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
+/* harmony import */ var _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/material/checkbox */ "./node_modules/@angular/material/esm5/checkbox.es5.js");
+/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/table */ "./node_modules/@angular/material/esm5/table.es5.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/material/autocomplete */ "./node_modules/@angular/material/esm5/autocomplete.es5.js");
+/* harmony import */ var _bill_items_bill_items_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./bill-items/bill-items.component */ "./src/app/bill-items/bill-items.component.ts");
+/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm5/radio.es5.js");
+/* harmony import */ var print_this__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! print-this */ "./node_modules/print-this/printThis.js");
+/* harmony import */ var print_this__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(print_this__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _orders_orders_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./orders/orders.component */ "./src/app/orders/orders.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
+/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @angular/material/paginator */ "./node_modules/@angular/material/esm5/paginator.es5.js");
 /* harmony import */ var _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./order-dialog/order-dialog.component */ "./src/app/order-dialog/order-dialog.component.ts");
 /* harmony import */ var _orders_service__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./orders.service */ "./src/app/orders.service.ts");
 /* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
@@ -304,6 +304,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 //import { InMemoryDataService }  from './in-memory-data.service';
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -312,13 +313,13 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _app_header_app_header_component__WEBPACK_IMPORTED_MODULE_6__["AppHeaderComponent"],
-                _order_window_order_window_component__WEBPACK_IMPORTED_MODULE_9__["OrderWindowComponent"],
-                _items_items_component__WEBPACK_IMPORTED_MODULE_11__["ItemsComponent"],
-                _order_details_order_details_component__WEBPACK_IMPORTED_MODULE_14__["OrderDetailsComponent"],
-                _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_16__["ItemDialogComponent"],
-                _bill_items_bill_items_component__WEBPACK_IMPORTED_MODULE_22__["BillItemsComponent"],
-                _orders_orders_component__WEBPACK_IMPORTED_MODULE_25__["OrdersComponent"],
+                _app_header_app_header_component__WEBPACK_IMPORTED_MODULE_7__["AppHeaderComponent"],
+                _order_window_order_window_component__WEBPACK_IMPORTED_MODULE_10__["OrderWindowComponent"],
+                _items_items_component__WEBPACK_IMPORTED_MODULE_12__["ItemsComponent"],
+                _order_details_order_details_component__WEBPACK_IMPORTED_MODULE_15__["OrderDetailsComponent"],
+                _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_17__["ItemDialogComponent"],
+                _bill_items_bill_items_component__WEBPACK_IMPORTED_MODULE_23__["BillItemsComponent"],
+                _orders_orders_component__WEBPACK_IMPORTED_MODULE_26__["OrdersComponent"],
                 _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_32__["OrderDialogComponent"],
                 _sale_end_sale_end_component__WEBPACK_IMPORTED_MODULE_35__["SaleEndComponent"],
                 _stock_stock_component__WEBPACK_IMPORTED_MODULE_36__["StockComponent"],
@@ -327,23 +328,24 @@ var AppModule = /** @class */ (function () {
                 _pricing_dialog_pricing_dialog_component__WEBPACK_IMPORTED_MODULE_39__["PricingDialogComponent"],
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_12__["FlexLayoutModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_15__["MatDialogModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_17__["MatInputModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_18__["MatCheckboxModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_19__["MatTableModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_20__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_20__["ReactiveFormsModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_23__["MatRadioModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__["MatToolbarModule"],
-                _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__["MatIconModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_21__["MatAutocompleteModule"],
-                _angular_material_menu__WEBPACK_IMPORTED_MODULE_7__["MatMenuModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_29__["MatDatepickerModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_30__["MatPaginatorModule"],
-                _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClientModule"],
-                _angular_material_card__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"],
-                _angular_http__WEBPACK_IMPORTED_MODULE_27__["HttpModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_34__["MatTooltipModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_26__["AppRoutingModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_31__["MatNativeDateModule"],
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_flex_layout__WEBPACK_IMPORTED_MODULE_13__["FlexLayoutModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__["MatDialogModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_18__["MatInputModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__["MatCheckboxModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_20__["MatTableModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_21__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_21__["ReactiveFormsModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_24__["MatRadioModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_4__["MatToolbarModule"],
+                _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_22__["MatAutocompleteModule"],
+                _angular_material_menu__WEBPACK_IMPORTED_MODULE_8__["MatMenuModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_30__["MatDatepickerModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_31__["MatPaginatorModule"],
+                _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatSortModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"],
+                _angular_material_card__WEBPACK_IMPORTED_MODULE_14__["MatCardModule"],
+                _angular_http__WEBPACK_IMPORTED_MODULE_28__["HttpModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_34__["MatTooltipModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_27__["AppRoutingModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatNativeDateModule"],
             ],
             entryComponents: [
-                _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_16__["ItemDialogComponent"],
+                _item_dialog_item_dialog_component__WEBPACK_IMPORTED_MODULE_17__["ItemDialogComponent"],
                 _order_dialog_order_dialog_component__WEBPACK_IMPORTED_MODULE_32__["OrderDialogComponent"],
                 _pricing_dialog_pricing_dialog_component__WEBPACK_IMPORTED_MODULE_39__["PricingDialogComponent"],
             ],
-            providers: [_data_service__WEBPACK_IMPORTED_MODULE_28__["DataService"], _orders_service__WEBPACK_IMPORTED_MODULE_33__["OrdersService"]],
+            providers: [_data_service__WEBPACK_IMPORTED_MODULE_29__["DataService"], _orders_service__WEBPACK_IMPORTED_MODULE_33__["OrdersService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
@@ -1033,6 +1035,8 @@ var OrderDetailsComponent = /** @class */ (function () {
     OrderDetailsComponent.prototype.ngOnInit = function () {
         this.dataSource = this.dataService.dataSource;
         console.log(this.dataSource);
+        this.postdata = [];
+        this.orderNumber = 0;
     };
     OrderDetailsComponent.prototype.ngDoCheck = function () {
         $(".qty-box").on('change', function () {
@@ -1069,6 +1073,7 @@ var OrderDetailsComponent = /** @class */ (function () {
         console.log(currentTime);
     };
     OrderDetailsComponent.prototype.printThis = function () {
+        var _this = this;
         var data = [];
         console.log(this.dataSource.data);
         var total;
@@ -1083,7 +1088,12 @@ var OrderDetailsComponent = /** @class */ (function () {
         //   this.orders = data;
         //   //this.showIems(this.orders.data[0].sequence_value);
         // });
-        this.orderService.addOrder(total, this.dataSource.data, this.deliverBy);
+        this.orderService.getOrders().subscribe(function (data) {
+            _this.orderNumber = data.length;
+            console.log(data.length);
+        });
+        // this.orderService.addOrder(total, this.dataSource.data, this.deliverBy);
+        console.log(this.orderNumber);
         var currentdate = new Date();
         var datetime = currentdate.getDate() + "/"
             + (currentdate.getMonth() + 1) + "/"
@@ -1091,7 +1101,8 @@ var OrderDetailsComponent = /** @class */ (function () {
             + currentdate.getHours() + ":"
             + currentdate.getMinutes() + ":"
             + currentdate.getSeconds();
-        var address = "<h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>The Mall of Layalpur<br>Harianwala Chowk Faisalabad<br>0315 0104553</h6>";
+        var orderNo = parseInt(this.orderNumber) + 1;
+        var address = "<h6 style='text-align: center;font-size: 20px;font-family: Arial, Helvetica, sans-serif;font-weight: 500;'>Order No. " + orderNo + "</h6><h6 style='text-align: center;font-size: 10px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>(" + this.deliverBy + ")</h6><h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>The Mall of Layalpur<br>Harianwala Chowk Faisalabad<br>0315 0104553</h6>";
         var credits = "<p class='credits' style='text-align:center; font-size:4px;margin-top:3px;'>Software Developed by JNW Projects<br>0323-7627567</p>";
         var footer = "<h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>Thank You, please come again</h6>" + credits;
         $('.print-receipt').printThis({
@@ -1293,10 +1304,10 @@ var httpOptions = {
     })
 };
 var OrdersService = /** @class */ (function () {
-    // uri = 'http://localhost:4000/business';
     function OrdersService(http) {
         this.http = http;
-        this.uri = 'https://fries-factory.herokuapp.com/business';
+        // uri = 'https://fries-factory.herokuapp.com/business';
+        this.uri = 'http://localhost:4000/business';
     }
     OrdersService.prototype.extractData = function (res) {
         var body = res;
@@ -1308,6 +1319,13 @@ var OrdersService = /** @class */ (function () {
             + (date.getMonth() + 1) + "/"
             + date.getFullYear();
         return this.http.get("" + this.uri + '?orderDate=' + currentDate).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
+    };
+    OrdersService.prototype.getOrdersCount = function () {
+        var date = new Date();
+        var currentDate = date.getDate() + "/"
+            + (date.getMonth() + 1) + "/"
+            + date.getFullYear();
+        return this.http.get(this.uri + "/ordercount").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
     };
     OrdersService.prototype.getSales = function () {
         return this.http.get(this.uri + "/dailySale").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(this.extractData));
@@ -1393,7 +1411,7 @@ module.exports = "button.mat-raised-button.mat-warn {\r\n    margin-left: 10px;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"page-wrapper\">\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h3 color=\"accent\" class=\"page-heading\">Orders</h3></span>\n        <span class=\"example-spacer\"></span>\n        <mat-form-field>\n            <input matInput [matDatepicker]=\"picker\"  placeholder=\"Date (From)\" [formControl]=\"dateFrom\">\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n          </mat-form-field>\n\n          <mat-form-field>\n            <input matInput [matDatepicker]=\"pickerTo\" (dateInput)=\"getCustomDate('input', $event)\" placeholder=\"Date (To)\" [formControl]=\"dateTo\">\n            <mat-datepicker-toggle matSuffix [for]=\"pickerTo\"></mat-datepicker-toggle>\n            <mat-datepicker #pickerTo></mat-datepicker>\n          </mat-form-field>\n          \n        <mat-form-field>\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Filter\">\n          </mat-form-field>\n    </mat-toolbar>\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h4 color=\"accent\">Total Amount: <span class=\"total-orders-amount\">0</span></h4></span>\n        <span class=\"example-spacer\"></span>\n        <span><h4 color=\"accent\">Total Orders: <span class=\"total-orders\">0</span></h4></span>\n    </mat-toolbar>\n    <div class=\"mat-elevation-z8\">\n    <table mat-table [dataSource]=\"dataSource\"  class=\"mat-elevation-z8 orders-table\" width=\"100%\">\n\n        <ng-container matColumnDef=\"position\">\n          <th mat-header-cell *matHeaderCellDef  class=\"item-name-th\"> Serial# </th>\n          <td mat-cell *matCellDef=\"let element; let i = index;\" class=\"item-name-td\"> {{i+1}} </td>\n        </ng-container>\n      \n        <ng-container matColumnDef=\"name\">\n          <th mat-header-cell *matHeaderCellDef> Date </th>\n          <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  >{{element.order_date}} </td>\n        </ng-container>\n\n        <ng-container matColumnDef=\"time\">\n            <th mat-header-cell *matHeaderCellDef> Time </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  >{{element.order_time}} </td>\n          </ng-container>\n    \n        <ng-container matColumnDef=\"amount\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right order-amount\">{{element.amount}}</td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"delivery\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Delivery Method </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n              <img *ngIf=\"element.deliveryBy === 'food panda'\" width=\"20%\" src=\"assets/foodpanda.jpg\">  \n              <span *ngIf=\"element.deliveryBy === 'Take Away'\">{{element.deliveryBy}}</span>\n              \n            \n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"action\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Action </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n                <button mat-raised-button color=\"accent\" (click)=\"openDialog(element._id)\">View</button>\n                <button mat-raised-button color=\"warn\" (click)=\"deleteOrder(element._id)\">Delete</button>\n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n        \n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n        <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\n\n    </table>\n    <mat-paginator [pageSizeOptions]=\"[5, 10, 25, 100]\"></mat-paginator>\n    \n    </div>\n</div>\n"
+module.exports = "<div class=\"page-wrapper\">\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h3 color=\"accent\" class=\"page-heading\">Orders</h3></span>\n        <span class=\"example-spacer\"></span>\n        <mat-form-field>\n            <input matInput [matDatepicker]=\"picker\"  placeholder=\"Date (From)\" [formControl]=\"dateFrom\">\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n          </mat-form-field>\n\n          <mat-form-field>\n            <input matInput [matDatepicker]=\"pickerTo\" (dateInput)=\"getCustomDate('input', $event)\" placeholder=\"Date (To)\" [formControl]=\"dateTo\">\n            <mat-datepicker-toggle matSuffix [for]=\"pickerTo\"></mat-datepicker-toggle>\n            <mat-datepicker #pickerTo></mat-datepicker>\n          </mat-form-field>\n          \n        <mat-form-field>\n            <input matInput (keyup)=\"applyFilter($event.target.value)\" placeholder=\"Filter\">\n          </mat-form-field>\n    </mat-toolbar>\n    <mat-toolbar color=\"primary\" class=\"page-toolbar\">\n        <span><h4 color=\"accent\">Total Amount: <span class=\"total-orders-amount\">0</span></h4></span>\n        <span class=\"example-spacer\"></span>\n        <span><h4 color=\"accent\">Total Orders: <span class=\"total-orders\">0</span></h4></span>\n    </mat-toolbar>\n    <div class=\"mat-elevation-z8\">\n    <table mat-table [dataSource]=\"dataSource\" matSort  class=\"mat-elevation-z8 orders-table\" width=\"100%\">\n\n        <ng-container matColumnDef=\"position\">\n          <th mat-header-cell *matHeaderCellDef  class=\"item-name-th\"> Serial# </th>\n          <td mat-cell *matCellDef=\"let element; let i = index;\" class=\"item-name-td\"> {{dataSource.data.length - i}} </td>\n        </ng-container>\n      \n        <ng-container matColumnDef=\"name\">\n          <th mat-header-cell *matHeaderCellDef> Date </th>\n          <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  >{{element.order_date}} </td>\n        </ng-container>\n\n        <ng-container matColumnDef=\"time\">\n            <th mat-header-cell *matHeaderCellDef> Time </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"price-item\" name=\"price\" value=\"\"  >{{element.order_time}} </td>\n          </ng-container>\n    \n        <ng-container matColumnDef=\"amount\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Amount </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right order-amount\">{{element.amount}}</td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"delivery\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Delivery Method </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n              <img *ngIf=\"element.deliveryBy === 'food panda'\" width=\"20%\" src=\"assets/foodpanda.jpg\">  \n              <span *ngIf=\"element.deliveryBy === 'Take Away'\">{{element.deliveryBy}}</span>\n              \n            \n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n\n        <ng-container matColumnDef=\"action\">\n            <th mat-header-cell *matHeaderCellDef class=\"text-center\"> Action </th>\n            <td mat-cell *matCellDef=\"let element\" class=\"text-right amount-item\">\n                <button mat-raised-button color=\"accent\" (click)=\"openDialog(element._id)\">View</button>\n                <button mat-raised-button color=\"warn\" (click)=\"deleteOrder(element._id)\">Delete</button>\n            </td>\n                <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost()}} </td> -->\n        </ng-container>\n        \n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n        <!-- <tr mat-footer-row *matFooterRowDef=\"displayedColumns\"></tr> -->\n\n    </table>\n    <mat-paginator [pageSizeOptions]=\"[5, 10, 25, 100]\"></mat-paginator>\n    \n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -1449,6 +1467,9 @@ var OrdersComponent = /** @class */ (function () {
     OrdersComponent.prototype.ngAfterViewChecked = function () {
         //this.totalOrders();
         // this.sumTotal();
+    };
+    OrdersComponent.prototype.ngAfterViewInit = function () {
+        this.dataSource.sort = this.sort;
     };
     OrdersComponent.prototype.ngOnInit = function () {
         var _this = this;
