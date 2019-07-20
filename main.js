@@ -1092,7 +1092,7 @@ var OrderDetailsComponent = /** @class */ (function () {
             _this.orderNumber = data.length;
             console.log(data.length);
         });
-        // this.orderService.addOrder(total, this.dataSource.data, this.deliverBy);
+        this.orderService.addOrder(total, this.dataSource.data, this.deliverBy);
         console.log(this.orderNumber);
         var currentdate = new Date();
         var datetime = currentdate.getDate() + "/"
