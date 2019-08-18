@@ -1326,10 +1326,10 @@ var httpOptions = {
     })
 };
 var OrdersService = /** @class */ (function () {
+    // uri = 'http://localhost:4000/business';
     function OrdersService(http) {
         this.http = http;
-        // uri = 'https://fries-factory.herokuapp.com/business';
-        this.uri = 'http://localhost:4000/business';
+        this.uri = 'https://fries-factory.herokuapp.com/business';
     }
     OrdersService.prototype.extractData = function (res) {
         var body = res;
