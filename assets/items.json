@@ -32,7 +32,9 @@
         {"name":"Bar-b-q Pizza Fries", "amount": "300"},
         {"name":"Cream Chicken Pizza Fires", "amount": "300"},
         {"name":"Chicken Fajita Pizza Fries", "amount": "300"},
-        {"name":"Supreme Pizza Fries", "amount": "350"}
+        {"name":"Supreme Pizza Fries", "amount": "350"},
+        {"name":"Jalapeno Pizza Fries", "amount": "400"},
+        {"name":"Chipatle Pizza Fries", "amount": "400"}
       ]
     },
     {

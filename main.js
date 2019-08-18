@@ -426,6 +426,8 @@ var ELEMENT_DATA = [
     { position: 18, name: 'Aqua Fina (500ml)', price: '30', size: '', amount: 0 },
     { position: 19, name: 'Curly Fries-R', price: '200', size: '', amount: 0 },
     { position: 20, name: 'Curly Fries-L', price: '250', size: '', amount: 0 },
+    { position: 21, name: 'Jalapeno Pizza Fries', price: '400', size: '', amount: 0 },
+    { position: 22, name: 'Chipatle Pizza Fries', price: '400', size: '', amount: 0 },
 ];
 var BillItemsComponent = /** @class */ (function () {
     function BillItemsComponent(renderer, el) {
@@ -436,7 +438,7 @@ var BillItemsComponent = /** @class */ (function () {
         this.options = ['Straight Cut Fries-R', 'Straight Cut Fries-M', 'Straight Cut Fries-L',
             'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li', 'Bar-b-q Pizza Fries',
             'Cream Chicken Pizza Fires', 'Chicken Fajita Pizza Fries', 'Supreme Pizza Fries',
-            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml', 'Curly Fries-R', 'Curly Fries-L'
+            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml', 'Curly Fries-R', 'Curly Fries-L', 'Jalapeno Pizza Fries', 'Chipatle Pizza Fries'
         ];
         this.selectedtableData = [];
     }
@@ -546,6 +548,8 @@ var ELEMENT_DATA = [
     { position: 18, name: 'Aqua Fina (500ml)', purchase_price: '30', sale_price: '30', size: '', amount: 0, 'quantity': 0 },
     { position: 19, name: 'Curly Fries (R)', purchase_price: '150', sale_price: '200', size: '', amount: 0, 'quantity': 0 },
     { position: 20, name: 'Curly Fries (L)', purchase_price: '180', sale_price: '250', size: '', amount: 0, 'quantity': 0 },
+    { position: 21, name: 'Jalapeno Pizza Fries', purchase_price: '200', sale_price: '400', size: '', amount: 0, 'quantity': 0 },
+    { position: 22, name: 'Chipatle Pizza Fries', purchase_price: '200', sale_price: '400', size: '', amount: 0, 'quantity': 0 },
 ];
 var itemsList = [
     { position: 1, name: 'Straight Cut Fries-R', purchase_price: '70.5', sale_price: '125', size: 'Regular', amount: 0, 'quantity': 0 },
@@ -578,7 +582,7 @@ var DataService = /** @class */ (function () {
         this.options = ['Straight Cut Fries-R', 'Straight Cut Fries-M', 'Straight Cut Fries-L',
             'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li', 'Bar-b-q Pizza Fries',
             'Cream Chicken Pizza Fires', 'Chicken Fajita Pizza Fries', 'Supreme Pizza Fries',
-            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 200ml', 'Curly Fries-R', 'Curly Fries-L'
+            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 200ml', 'Curly Fries-R', 'Curly Fries-L', 'Jalapeno Pizza Fries', 'Chipatle Pizza Fries'
         ];
         this.selectedtableData = [];
         this.uri = 'https://fries-factory.herokuapp.com/business';
@@ -751,6 +755,8 @@ var ELEMENT_DATA = [
     { position: 18, name: 'Aqua Fina (500ml)', purchase_price: '', sale_price: '30', size: '', amount: 0 },
     { position: 19, name: 'Curly Fries-R', purchase_price: '', sale_price: '200', size: '', amount: 0 },
     { position: 20, name: 'Curly Fries-L', purchase_price: '', sale_price: '250', size: '', amount: 0 },
+    { position: 21, name: 'Jalapeno Pizza Fries', purchase_price: '', sale_price: '400', size: '', amount: 0 },
+    { position: 22, name: 'Chipatle Pizza Fries', purchase_price: '', sale_price: '400', size: '', amount: 0 },
 ];
 var ItemDialogComponent = /** @class */ (function () {
     function ItemDialogComponent(dialogRef, data, dataAdd, productData) {
@@ -763,7 +769,7 @@ var ItemDialogComponent = /** @class */ (function () {
         this.options = ['Straight Cut Fries-R', 'Straight Cut Fries-M', 'Straight Cut Fries-L',
             'Tangled Tango', 'Eldorado Buzz', 'Cloud Green', 'Winky Twister', 'Mayo-Li', 'Bar-b-q Pizza Fries',
             'Cream Chicken Pizza Fires', 'Chicken Fajita Pizza Fries', 'Supreme Pizza Fries',
-            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml', 'Curly Fries-R', 'Curly Fries-L'
+            'Nuggets (8 pcs)', 'Wings (8 pcs)', '350ml', '500ml', '1.5 Ltr', 'Aqua Fina 500ml', 'Curly Fries-R', 'Curly Fries-L', 'Jalapeno Pizza Fries', 'Chipatle Pizza Fries'
         ];
         this.selectedtableDataNew = [];
     }
@@ -1104,7 +1110,7 @@ var OrderDetailsComponent = /** @class */ (function () {
             var footer = "<h6 style='text-align: center;font-size: 5px;font-family: Arial, Helvetica, sans-serif;font-weight: 300;'>Thank You, please come again</h6>" + credits;
             $('.print-receipt').printThis({
                 loadCSS: ['/assets/css/order-bill.css', "https://waleedumer.github.io/friesfactory/assets/css/order-bill.css"],
-                header: '<small style="font-size: 5px;">' + datetime + '</small><p class="center-logo" style="text-align:center; margin: 5px 0;"><img style="width:40%;" src="https://waleedumer.github.io/friesfactory/assets/logo/BillLogo.png" /></p>' + address,
+                header: '<small style="font-size: 10px;">' + datetime + '</small><p class="center-logo" style="text-align:center; margin: 5px 0;"><img style="width:40%;" src="https://waleedumer.github.io/friesfactory/assets/logo/BillLogo.png" /></p>' + address,
                 footer: footer
             });
         });
@@ -1320,10 +1326,10 @@ var httpOptions = {
     })
 };
 var OrdersService = /** @class */ (function () {
-    // uri = 'http://localhost:4000/business';
     function OrdersService(http) {
         this.http = http;
-        this.uri = 'https://fries-factory.herokuapp.com/business';
+        // uri = 'https://fries-factory.herokuapp.com/business';
+        this.uri = 'http://localhost:4000/business';
     }
     OrdersService.prototype.extractData = function (res) {
         var body = res;
@@ -1607,7 +1613,7 @@ module.exports = ".table-pricing thead tr{\r\n    background: black;\r\n    colo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"\">\n    <table class=\"table-pricing\" width=\"100%\">\n        <thead>\n          <tr>\n            <th>Name</th>\n            <th>Purchasing</th>\n            <th>Selling</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>{{itemData.details.name}}</td>\n            <td>{{itemData.details.purchase_price}}</td>\n            <td>{{itemData.details.sale_price}}</td>\n          </tr>\n        </tbody>\n    </table>\n</div>\n<div mat-dialog-actions>\n  <div class=\"no-btn\">\n    <button mat-button (click)=\"onNoClick()\" class=\"no-btn\">No Thanks</button>\n  </div>\n  <div class=\"yes-btn\">\n    <button mat-button [mat-dialog-close] cdkFocusInitial class=\"update-btn\">Update</button>\n  </div>\n</div>"
+module.exports = "<div class=\"\">\n    <table class=\"table-pricing\" width=\"100%\">\n        <thead>\n          <tr>\n            <th>Name</th>\n            <th>Purchasing</th>\n            <th>Selling</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>{{itemData.details.name}}</td>\n            <td><input class=\"mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-pristine ng-valid ng-touched\" value=\"{{itemData.details.purchase_price}}\"></td>\n            <td><input class=\"mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-pristine ng-valid ng-touched\" value=\"{{itemData.details.sale_price}}\"></td>\n          </tr>\n        </tbody>\n    </table>\n</div>\n<div mat-dialog-actions>\n  <div class=\"no-btn\">\n    <button mat-button (click)=\"onNoClick()\" class=\"no-btn\">No Thanks</button>\n  </div>\n  <div class=\"yes-btn\">\n    <button mat-button [mat-dialog-close] cdkFocusInitial class=\"update-btn\">Update</button>\n  </div>\n</div>"
 
 /***/ }),
 
